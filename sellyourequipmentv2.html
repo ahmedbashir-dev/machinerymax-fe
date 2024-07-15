@@ -874,6 +874,89 @@
             padding-left: 30px !important;
             padding-right: 30px !important;
         }
+
+        .testimonial-container {
+            position: relative;
+            margin-left: 2%;
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            /* background-color: white; */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden;
+
+
+        }
+
+        .testimonial-text-wrapper {
+            /* height: 100px; */
+            overflow: hidden;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #3E3E3E;
+            margin-bottom: 20px;
+            animation-name: slideIn;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .testimonial-author,
+        .testimonial-author-company,
+        .testimonial-author-location {
+            font-weight: bold;
+            color: #FF5E14;
+            animation-name: slideIn;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+
+
+        }
+
+        .chevron {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 60px;
+            color: #FF5E14;
+            cursor: pointer;
+
+        }
+
+        .chevron-left {
+            left: 10px;
+        }
+
+        .chevron-right {
+            right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-container {
+                width: 100%;
+                margin: 0px 0px 50px 0px;
+            }
+
+            .testimonial-text {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 
@@ -912,6 +995,33 @@
                             <img src="https://blog.machinerymax.com/wp-content/uploads/2024/07/Complete-shop-2.jpg"
                                 class="img-responsive image-height-desktop image-height-mobile image-fit img-rounded"
                                 alt="Machinery Image 6">
+                        </div>
+                    </div>
+                    <div class="row margin-top-4">
+                        <div class="testimonial-container">
+                            <div class="testimonial-text-wrapper">
+                                <div class="testimonial-text">
+                                    "Thank you to MachineryMax for help selling our two CNC machines. They took care of
+                                    all
+                                    the details from photographing our machines to giving input on the machine to
+                                    replace
+                                    the two old machines. We are hoping to find a line boring machine to purchase in a
+                                    future auction."
+                                </div>
+                                <div class="testimonial-author">
+                                    John Grout
+                                </div>
+                                <div class="testimonial-author-company">
+                                    Portland Closet Company
+                                </div>
+                                <div class="testimonial-author-location">
+                                    Protland, Oregon
+                                </div>
+                            </div>
+
+
+                            <div class="chevron chevron-left">&#8249;</div>
+                            <div class="chevron chevron-right">&#8250;</div>
                         </div>
                     </div>
                 </div>
@@ -2037,6 +2147,8 @@
         </div>
     </div>
 
+
+
     <script type="text/javascript">
         // Get the anchor link
         const anchorLinks = document.querySelectorAll('.form-target-btn');
@@ -2057,6 +2169,80 @@
                 });
             });
         }
+
+        const testimonialsContainer = document.querySelector('.testimonial-container');
+        const chevronLeft = document.querySelector('.chevron-left');
+        const chevronRight = document.querySelector('.chevron-right');
+        const testimonialText = document.querySelector('.testimonial-text');
+
+        const testimonials = [
+            {
+                text: '"Thank you to MachineryMax for help selling our two CNC machines. They took care of all the details from photographing our machines to giving input on the machine to replace the two old machines. We are hoping to find a line boring machine to purchase in a future auction."',
+                author: "John Grout",
+                authorCompany: 'Portland Closet Company',
+                authorLocation: 'Portland, Oregon'
+            },
+            {
+                text: '"I have worked with MachineryMax for several years to sell our excess equipment. The staff is professional and has executed each sale with no issues. Our company continues to upgrade our equipment and am sure we will call on MachineryMax again. Highly recommend their services."',
+                author: "Dave Meier Manager",
+                authorCompany: 'Lanz Cabinets',
+                authorLocation: 'Eugene, Oregon'
+            },
+            {
+                text: '"The team at MachineryMax is completely professional. They are on time and work their tail off to make sure the machinery is the best possible light to make the most money for the selling company. The estimates are extremely accurate. The website is exemplary. Financial goals are not only met but usually exceeded and the money is delivered in a timely fashion. We at All Wood look forward to our next opportunity to work with the team at MachineryMax."',
+                author: "Bill",
+                authorCompany: 'Imagine Furniture Group',
+                authorLocation: 'Tempe, Arizona'
+            },
+        ];
+
+        let currentIndex = 0;
+
+        function showTestimonial(index) {
+            const testimonialTextWrapper = document.querySelector('.testimonial-text-wrapper');
+            // testimonialTextWrapper.style.height = '100px'; // Reset the height
+            const testimonialTextElement = document.querySelector('.testimonial-text');
+            const testimonialAuthorElement = document.querySelector('.testimonial-author');
+            const testimonialAuthorCompanyElement = document.querySelector('.testimonial-author-company');
+            const testimonialAuthorLocationElement = document.querySelector('.testimonial-author-location')
+            testimonialTextElement.style.animation = 'none'; // Reset the animation
+            void testimonialTextElement.offsetWidth; // Trigger a reflow to ensure the animation plays
+            testimonialTextElement.style.animation = 'slideIn 0.5s ease-in-out';
+
+
+            testimonialAuthorElement.style.animation = 'none'; // Reset the animation
+            void testimonialAuthorElement.offsetWidth; // Trigger a reflow to ensure the animation plays
+            testimonialAuthorElement.style.animation = 'slideIn 0.5s ease-in-out';
+
+
+            testimonialAuthorCompanyElement.style.animation = 'none'; // Reset the animation
+            void testimonialAuthorCompanyElement.offsetWidth; // Trigger a reflow to ensure the animation plays
+            testimonialAuthorCompanyElement.style.animation = 'slideIn 0.5s ease-in-out';
+
+
+            testimonialAuthorLocationElement.style.animation = 'none'; // Reset the animation
+            void testimonialAuthorLocationElement.offsetWidth; // Trigger a reflow to ensure the animation plays
+            testimonialAuthorLocationElement.style.animation = 'slideIn 0.5s ease-in-out';
+
+
+
+            testimonialTextElement.textContent = testimonials[index].text;
+            testimonialAuthorElement.textContent = testimonials[index].author;
+            testimonialAuthorCompanyElement.textContent = testimonials[index].authorCompany;
+            testimonialAuthorLocationElement.textContent = testimonials[index].authorLocation;
+        }
+
+        chevronLeft.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(currentIndex);
+        });
+
+        chevronRight.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            showTestimonial(currentIndex);
+        });
+
+        showTestimonial(currentIndex);
 
     </script>
 </body>
