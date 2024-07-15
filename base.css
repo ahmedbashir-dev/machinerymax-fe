@@ -1,0 +1,840 @@
+        /* Importing Montserrat font from Google Fonts */
+
+
+        /* Testing */
+        :root {
+            --blue: #1e90ff;
+            --white: #ffffff;
+        }
+
+
+        body {
+            color: var(--blue);
+            background-color: var(--blue);
+            font-family: "Montserrat" !important;
+            letter-spacing: 1px !important;
+            font-weight: 400;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+            font-size: 100%;
+            font-size: 1.4em;
+        }
+
+        @media (min-width: 1200px) .container {
+            width: 1270px;
+        }
+
+        .breadcrumb {
+            padding: 0;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+
+        .breadcrumb a {
+            color: #02245b;
+            font-weight: 500;
+        }
+
+        .btn-default {
+            color: #ffffff;
+            background-color: #FF4402;
+            border-color: #FF4402;
+        }
+
+
+        .form-group .btn-default {
+            color: #000;
+            background-color: #E5E6E9;
+            border-color: #E5E6E9;
+            /*    font-size: 13px;
+    font-weight: 400;*/
+        }
+
+        .form-group .btn-primary {
+            color: #ffffff;
+            background-color: #FF4402;
+            border-color: #FF4402;
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        .input-group-addon {
+            font-size: 13px;
+        }
+
+        .section-title .form-control {
+            font-size: 13px;
+            height: 33px
+        }
+
+        .header-splash {
+            background-color: #303747;
+        }
+
+        /*Commented to fix issue of browse category*/
+        /*.nav > li > a {
+    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+}*/
+
+        .categories {
+            background-color: #E5E6E9;
+        }
+
+        .time__format--active {
+            background-color: var(--bg-header-color-logo);
+            color: #FFF;
+            padding: 5px;
+            border-radius: 0;
+            font-size: 10px;
+            text-align: right;
+            width: 145px;
+        }
+
+        .event-row__title {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            position: relative;
+            line-height: 1.2;
+        }
+
+        .event-row__title a,
+        .title.inlinebidding a,
+        .listing .title a,
+        .galleryTitle a {
+            color: #02245B;
+            font-size: 18px;
+        }
+
+        .listing .title,
+        .listing .subtitle a {
+            color: #212529 !important;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+        }
+
+        .listing .price {
+            color: #f44336;
+            font-size: 30px;
+        }
+
+        .galleryPrice {
+            color: #f44336;
+            font-size: 14px;
+        }
+
+        /*Commented to fix issue of browse category*/
+        /*.categories li a, .browse-categories li a, .categories .nav > li > a {
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    position: relative;
+    display: inline-block;
+    padding: 3px 10px !important
+}*/
+
+
+
+        .view-all-lots a,
+        .cta a,
+        .InlineQuickBid,
+        .gallery-quickbid a {
+            float: right;
+            background: linear-gradient(to bottom right, red, #ffc107);
+            clip-path: polygon(500% 0, 100% 100%, 88% 100%, 0 100%, 0 0);
+            border-radius: 26px !important;
+            border: 0;
+        }
+
+        .sliderButtons button,
+        .sliderButtons a {
+            background-color: #FF4402;
+        }
+
+
+        footer {
+            background-color: #303747;
+            padding-top: 30px;
+            color: #fff;
+        }
+
+        .footer__links a {
+            color: #9797B2;
+            padding-left: 10px;
+            padding-right: 0;
+            padding-top: 0;
+            display: inline-block;
+        }
+
+        .hasQuickbid .cta a {
+            float: none;
+            font-size: 14px;
+        }
+
+        .listing .cta a {
+            float: none;
+        }
+
+        .cta .bids .awe-rt-CurrentPrice {
+            font-size: 16px;
+        }
+
+        .title.inlinebidding a,
+        .listing .title a {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+
+            .cta .bids .awe-rt-CurrentPrice {
+                font-size: 14px;
+            }
+
+            .title.inlinebidding a,
+            .listing .title a {
+                font-size: 14px;
+            }
+
+            .listing {
+                letter-spacing: normal !important;
+            }
+        }
+
+        .section-title .form-inline .form-group .btn-default {
+            font-size: 13px;
+        }
+
+        .section-title .form-inline .form-group .btn-default:hover {
+            border-color: var(--color-navy-blue);
+        }
+
+        @media (min-width: 768px) {
+            .view-all-lots {
+                grid-row-start: 4;
+            }
+
+            .event-hp .event-row .event-row__img .no-photo-thumbnail {
+                height: 168px;
+            }
+
+            .event-hp .event-row .event-row__img .no-photo-thumbnail .img-responsive {
+                height: 100%;
+            }
+
+            .event-hp .event-row .event-row__img {
+                grid-row-end: span 4;
+            }
+        }
+
+        @media (max-width:546Px) {
+            .event-hp {
+                letter-spacing: normal !important;
+            }
+
+            .event-row__title a {
+                font-size: 14px;
+            }
+
+            .view-all-lots {
+                grid-row-start: 5;
+            }
+
+            .view-all-lots .btn-default {
+                font-size: 14px;
+            }
+
+            .event-hp .event-row .event-row__img .no-photo-thumbnail {
+                height: 168px;
+            }
+
+            .event-hp .event-row .event-row__img .no-photo-thumbnail .img-responsive {
+                height: 100%;
+            }
+
+            .event-hp .event-row .event-row__img {
+                grid-row-end: span 4;
+            }
+        }
+
+        .detail__manageoffers .detail__option-menu__link {
+            background-color: var(--color-light-orange) !important;
+        }
+
+        .service-added-option {
+            width: 100% !important;
+        }
+
+        .create-listing form .btn-xs,
+        .create-lot form .btn-xs,
+        .create-event form .btn-xs,
+        .edit-listing form .btn-xs,
+        .edit-event form .btn-xs,
+        .edit-lot form .btn-xs {
+            color: var(--color-black);
+            background-color: var(--color-mercury);
+            border-color: var(--color-mercury);
+        }
+
+
+        .edit-event form .img-delete,
+        .edit-listing form .img-delete,
+        .edit-lot form .img-delete {
+            color: var(--color-white);
+            background-color: var(--color-dark-red);
+            border-color: var(--color-dark-red);
+        }
+
+        .edit-event form .img-rotate-CW,
+        .edit-listing form .img-rotate-CW,
+        .edit-lot form .img-rotate-CW {
+            color: var(--color-white);
+            background-color: var(--color-orange);
+            border-color: var(--color-orange);
+        }
+
+        .edit-event form .img-rotate-CW:hover,
+        .edit-listing form .img-rotate-CW:hover,
+        .edit-lot form .img-rotate-CW:hover {
+            border-color: var(--color-gray);
+        }
+
+        .listing.highlight .title a {
+            color: #286090 !important;
+        }
+
+        .EventToggleWrapper .data-card {
+            color: var(--color-black);
+        }
+
+        .remaining-time {
+            background-color: #303747;
+            color: #FFF;
+            padding: 5px;
+            border-radius: 0;
+            font-size: 10px;
+            text-align: right;
+            width: 120px
+        }
+
+        /* #region Event Banner Customization*/
+        .event-banner img {
+            max-height: 50vh;
+        }
+
+        /* #endregion Event Banner Customization*/
+
+        .text-black {
+            color: var(--color-black) !important;
+        }
+
+        /* #region Event Card Customization*/
+
+        @keyframes pulse {
+            0% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.10, 1.10, 1.10)
+            }
+
+            to {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+        }
+
+        .pulse-animation-infinite {
+            animation: pulse 1s ease-in-out infinite;
+        }
+
+
+        .event-card {
+            box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+            border-radius: 3.5px;
+            margin-bottom: 25px;
+        }
+
+        .event-card .event-row__status--active {
+            background-color: var(--color-green);
+        }
+
+        .event-card .btn-view-all-lots {
+            text-transform: uppercase;
+            font-weight: normal;
+            width: 85%;
+        }
+
+        .event-row__summary {
+            max-height: 85.7144px;
+            /*height: auto !important;*/
+            white-space: normal;
+            font-size: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 4;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+
+        .event-row__status * {
+            white-space: normal;
+        }
+
+        .event-img {
+            height: 20rem;
+            object-fit: contain;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .event-card .event-img-container .no-photo-thumbnail {
+            max-width: initial;
+        }
+
+        .event-card .event-img-container .no-photo-thumbnail .img-responsive {
+            max-width: initial;
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+            width: 100%;
+            max-width: 100%;
+        }
+
+
+        .event-card .event-detail-container {
+            display: flex;
+            padding-right: 0;
+        }
+
+        .event-card .event-row__title a {
+            font-size: clamp(12px, 1.3em, 18px);
+            position: relative;
+            font-weight: bold;
+            color: var(--bg-header-color-logo);
+        }
+
+        .event-card .underline a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 4px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--color-navy-blue);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+
+        .event-card .underline a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .event-card .bids {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            margin-top: auto;
+            align-items: end;
+        }
+
+
+        .awe-rt-eventbidstatuslabel>span {
+            padding: 8px 10px;
+            font-size: 16px;
+        }
+
+        .awe-rt-eventbidstatuslabel>div {
+            padding: 10px 5px;
+            font-size: 12px;
+        }
+
+        .event-card .panel-body {
+            position: relative;
+        }
+
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+
+        .event-card .event-row__title {
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .justify-content-end {
+            justify-content: end;
+        }
+
+        .auction-details-btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .event-card .event-row__countdown {
+            margin-bottom: 5px;
+        }
+
+        .event-row__title,
+        .data-card {
+            font-size: 18px;
+        }
+
+
+        .mt-auto {
+            margin-top: auto;
+        }
+
+        .data-card,
+        .event-row__title {
+            color: var(--color-navy-blue);
+        }
+
+        .event-card .event-row__time-label {
+            border-bottom: 0;
+            font-size: 13px;
+        }
+
+
+        .summary-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .summary-container .time-label {
+            white-space: nowrap;
+            text-align: right;
+            margin-left: 10px;
+            align-self: center;
+        }
+
+        .event-card .event-timer {
+            background-color: var(--bg-header-color-logo);
+            color: #FFF;
+        }
+
+        .btn-view-all-lots {
+            border-radius: 0;
+            font-size: 12px;
+        }
+
+        .lot-close-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .event-card .close-time {
+            font-weight: bold;
+            font-size: 15px;
+            color: var(--color-navy-blue);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .event-status-label {
+            background-color: transparent;
+            border: 1px solid #ddd;
+            color: #888;
+            text-transform: uppercase;
+            font-weight: 400;
+            padding: 2px 5px;
+        }
+
+        .lot-close-container a {
+            margin-left: auto;
+        }
+
+        .event-card .event-row__status--closed {
+            background: var(--color-light-gray);
+            color: var(--color-dark-gray);
+        }
+
+        .event-card .panel-body {
+            padding: 0;
+        }
+
+        .event-buttons-container {
+            width: 35%;
+            text-align: center;
+        }
+
+        .event-data {
+            width: 65%;
+        }
+
+        .event-end-time {
+            font-weight: normal;
+            font-size: 13px;
+        }
+
+        .event-img-container {
+            display: flex;
+            padding-right: 0;
+        }
+
+        .event-horizontal-bar {
+            width: 35px;
+            padding-top: 10px;
+            background-color: grey;
+        }
+
+        .event-img-container>a {
+            margin: 15px;
+            width: 100%;
+        }
+
+        .event-row__title {
+            margin-bottom: 10px;
+            margin-top: 5px;
+            max-height: 56.16px;
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+
+        .event-row_location {
+            font-size: clamp(12px, 1.4em, 16px);
+            color: var(--bg-header-color-logo);
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        .event-card .awe-rt-eventtimelabel * {
+            color: var(--bg-header-color-logo);
+        }
+
+        .event-buttons-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .event-card .btn-view-all-lots {
+            padding: 10px 5px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            white-space: normal;
+        }
+
+        .event-rowViewAll {
+            font-weight: 700 !important;
+            font-size: clamp(1.2rem, 1vw, 1rem) !important;
+        }
+
+        .graySideBar {
+            background-color: gray;
+            width: 30px;
+            height: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        @media (max-width: 1200px) {
+
+            .event-img,
+            .event-card .event-img-container .no-photo-thumbnail .img-responsive {
+                height: 18rem;
+            }
+
+            .event-card .event-buttons-container * {
+                font-size: 10px;
+            }
+
+            .event-card .close-time {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .btn-view-all-lots {
+                padding: 7px 15px 7px 15px;
+            }
+
+            .event-row__title a {
+                font-size: 16px !important;
+            }
+
+            .event-row__time-label span {
+                font-size: 12px !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .event-img,
+            .event-img-container .no-photo-thumbnail .img-responsive {
+                height: 20rem;
+            }
+
+            .time-label {
+                margin-left: auto !important;
+            }
+
+            .event-row__summary {
+                margin-bottom: 10px;
+            }
+
+            .awe-rt-eventbidstatuslabel>span {
+                font-size: 14px;
+            }
+
+
+            .event-card .btn-view-all-lots,
+            .event-card .event-timer {
+                padding: 8px 10px;
+            }
+
+            .event-row__title a {
+                font-size: 16px !important;
+            }
+
+            .event-row__time-label span {
+                font-size: 12px !important;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 1200px) {
+            .event-card .awe-rt-eventtimelabel * {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            .event-img-container,
+            .event-detail-container,
+            .event-data {
+                width: 100% !important;
+            }
+
+            .graySideBar {
+                display: none;
+            }
+
+            .event-buttons-container {
+                display: none;
+            }
+
+            .event-detail-container {
+                padding: 30px;
+            }
+
+            .data-card {
+                font-size: 16px;
+            }
+
+            .event-card .event-img,
+            .event-card .event-img-container .no-photo-thumbnail .img-responsive {
+                height: auto;
+                max-height: 300px;
+            }
+
+            .summary-container {
+                flex-wrap: wrap;
+            }
+
+            .event-detail-container {
+                padding-top: 0;
+                padding-bottom: 15px;
+            }
+
+            .btn exploreBtn .btn-view-all-lots {
+                margin-bottom: 0;
+            }
+
+            .event-card .event-row__title {
+                margin-top: 0;
+            }
+
+            .xs-event-status {
+                display: inline-block;
+            }
+
+            .xs-event-status {
+                position: absolute;
+                right: 15px;
+                z-index: 1;
+            }
+
+            .event-card .event-timer {
+                padding: 6px 15px;
+            }
+
+            .awe-rt-eventbidstatuslabel>div {
+                min-width: 20px;
+                padding: 6px 15px;
+            }
+
+            .xs-time-btn-container {
+                display: block;
+                text-align: center;
+            }
+
+            .xs-close-time-label {
+                font-weight: bold;
+                font-size: 15px;
+                color: var(--color-navy-blue);
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                white-space: nowrap;
+            }
+
+
+            .event-row__summary {
+                -webkit-line-clamp: 2;
+                font-size: 14px;
+            }
+
+            .event-card .btn-view-all-lots {
+                padding: 10px;
+                width: 55%;
+            }
+
+
+
+        }
+
+
+        /* #endregion Event Card Customization*/
+
+        /* #region lot/Listing create page image upload button color change */
+        .lot-image-panel .imagecontainer .btn-default,
+        .listing-image-panel .imagecontainer .btn-default {
+            color: var(--color-white);
+            background-color: var(--color-dark-orange);
+            border-color: var(--color-dark-orange);
+        }
+
+        .lot-image-panel .imagecontainer .btn-default:hover,
+        .listing-image-panel .imagecontainer .btn-default:hover {
+            border-color: var(--color-navy-blue);
+        }
+
+        .lot-image-panel .imagecontainer .btn-danger,
+        .listing-image-panel .imagecontainer .btn-danger {
+            color: var(--color-white);
+            background-color: var(--color-dark-red);
+            border-color: var(--color-dark-red);
+        }
+
+        /* #endregion lot/Listing create page image upload button color change */
+
+        /* Testing End */
