@@ -25,11 +25,12 @@
 
         /* Finance Hero Section */
         .hero-container {
-            display: flex;
+            /* display: flex; */
             position: relative;
-            align-items: center;
+            /* align-items: center;
             flex-direction: column;
-            justify-content: center;
+            justify-content: center; */
+            height: 100vh;
         }
 
         .finance-hero-section {
@@ -53,7 +54,7 @@
             left: 0;
             position: absolute;
             width: 100% !important;
-            height: 90%;
+            height: 70%;
             background: linear-gradient(179.17deg, #FFFFFF 0.71%, rgba(255, 255, 255, 0.8) 61.3%, rgba(255, 255, 255, 0) 89.81%);
             z-index: 0;
             /* mix-blend-mode: hard-light; */
@@ -132,6 +133,47 @@
                 padding-right: 1rem;
             }
         }
+
+        /* Finance Hero Section End */
+
+
+        /* Finance Middle Section - floating */
+        .finance-float-section {
+            background-color: var(--mx-yellow);
+            width: 80%;
+            z-index: 2;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 8px;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+
+        .finance-float-section h2 {
+            margin: 0;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .finance-float-section p {
+            text-align: center;
+            padding: 0 80px;
+            line-height: 22px;
+        }
+
+
+
+        /* Financing Options Section */
+        .finance-options-section {
+            background-color: var(--mx-blue-grey);
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -167,6 +209,22 @@
 
                         </a>
                     </div>
+                </div>
+                <div class="finance-float-section">
+                    <div class="finance-float-heading">
+                        <h2>Grow Your Business with Hassle-Free Financing</h2>
+                    </div>
+                    <div class="finance-float-subtext">
+                        <p>MachineryMax, in partnership with First Citizens Bank Equipment Finance, offers
+                            straightforward and efficient financing solutions tailored for all your equipment needs.
+                            Whether you're looking to finance new or used machinery, we provide flexible terms and
+                            competitive rates to help your business thrive.</p>
+                    </div>
+
+                </div>
+
+                <div class="finance-options-section">
+                    sdvlkn
                 </div>
             </div>
         </div>
