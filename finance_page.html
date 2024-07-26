@@ -232,13 +232,10 @@
         }
 
         .finance-card {
-            /* border: 1px solid white; */
             display: flex;
             flex-direction: column;
             gap: 5px;
             flex: 1;
-            /* background-color: #00B1FF; */
-            /* padding: 2rem 4rem; */
         }
 
         .finance-card-title {
@@ -252,7 +249,7 @@
             font-size: 12px;
         }
 
-        @media (max-width:767px) {
+        @media (max-width: 767px) {
             .finance-options-cards-section {
                 flex-direction: column;
                 gap: 2rem;
@@ -262,29 +259,43 @@
             }
 
             .finance-card {
-                /* border: 1px solid white; */
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
                 align-items: center;
                 flex: 1;
-                /* background-color: #00B1FF; */
-                /* padding: 2rem 4rem; */
             }
 
             .finance-card-title {
-                font-weight: 600;
-                color: white;
                 font-size: 16px;
                 text-align: center;
             }
 
             .finance-card-text {
-                color: white;
                 text-align: center;
                 font-size: 12px;
             }
+        }
 
+        @media (max-width: 991px) and (min-width: 768px) {
+            .finance-options-cards-section {
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
+
+            .finance-card {
+                flex: 0 0 48%;
+            }
+
+            .finance-card-title {
+                font-size: 14px;
+            }
+
+            .finance-card-text {
+                font-size: 10px;
+            }
         }
 
         /* Financing Options Section End */
