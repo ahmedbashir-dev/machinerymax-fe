@@ -231,6 +231,7 @@
         }
 
 
+
         @media (max-width: 767px) {
             .our-services-container {
                 padding-left: 2rem;
@@ -260,27 +261,77 @@
         .our-solution-container {
             padding-left: 11rem;
             padding-right: 11rem;
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
             background-color: #212429;
             color: white;
+            line-height: 1;
+            /* Avoid any line-height-induced gaps */
+            box-sizing: border-box;
+            position: relative;
+            /* For pseudo-element */
         }
 
 
 
+        .bg-black {
+            background-color: #212429;
+        }
+
+        .our-solution-card {
+            background-color: #1E1E21;
+            border-radius: 0.5rem;
+            /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            min-height: 150px;
+        }
+
+        .our-solution-card-heading {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: unset;
+            margin-bottom: unset;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .our-solution-card-text {
+            font-size: 1.2rem;
+            color: #929292;
+            text-align: center;
+        }
+
         .our-solution-section-heading {
             font-weight: 600;
+        }
+
+        .our-solution-section-subheading {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
         }
 
         @media (max-width: 767px) {
             .our-solution-container {
                 padding-left: 2rem;
                 padding-right: 2rem;
+                line-height: 1;
+                /* Avoid any line-height-induced gaps */
+                box-sizing: border-box;
+                position: relative;
+                /* For pseudo-element */
+
             }
+
+
 
             .our-solution-section-heading {
                 text-align: left;
                 font-size: 3rem;
+            }
+
+            .our-solution-card {
+                margin-top: 10px;
             }
 
             .our-solution-section-subheading {
@@ -292,84 +343,13 @@
 
 
 
-        /* Purchase equipment */
-        .purchase-equipment-container {
-            z-index: 6;
-            background-color: #212429;
-            /* display: flex;
-                flex-direction: column; */
-            padding-top: 6rem;
-            padding-left: 10rem;
-            padding-right: 10rem;
-            padding-bottom: 6rem;
-        }
-
-        .purchase-equipments-heading {
-            font-size: 38px;
-            font-weight: bold;
-            color: rgba(255, 255, 255, 1);
-        }
-
-        .purchase-equipments-number {
-            font-weight: 900;
-            font-size: 2em;
-            color: white;
-        }
-
-        .purchase-equipment-heading {
-            color: white !important;
-            font-size: 2rem;
-            font-weight: 600;
-            padding-top: 0.5em !important;
-        }
-
-        .purchase-equipment-text {
-            color: white !important;
-            font-size: 0.9em;
-            max-width: 90%;
-        }
-
-        @media (max-width: 768px) {
-            .purchase-equipment-container {
-                padding-top: 4rem;
-                padding-left: 2rem !important;
-                padding-right: 2rem !important;
-                padding-bottom: 4rem;
-            }
-
-            .purchase-equipments-heading {
-                font-size: 24px;
-                text-align: center;
-            }
-
-            .purchase-equipments-number {
-                font-size: 1.8em;
-            }
-
-            .purchase-equipment-heading {
-                font-size: 1.8rem;
-            }
-
-            .purchase-equipment-text {
-                font-size: 0.8em;
-                max-width: 100%;
-            }
-
-            .video-section-text {
-                max-width: 100% !important;
-            }
-
-            .video-section {
-                align-items: unset !important;
-            }
-        }
-
-        /* Purchase equipment end */
 
 
-        /* Video section start */
-        .video-section {
-            padding-top: 8rem;
+
+
+        /* how it works section start */
+        .how-it-works-section {
+            padding-top: 3rem;
             padding-bottom: 8rem;
             display: flex;
             justify-content: center;
@@ -378,140 +358,249 @@
             background-color: rgba(48, 55, 71, 1);
         }
 
-        .video-section-text {
-            max-width: 50%;
+        .how-it-works-section-heading {
+            color: white;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+
+
+        /* General card styling */
+        .mx-card {
+            display: flex;
+            align-items: center;
+            background-color: #2C3340;
+            /* Dark background color similar to the screenshot */
+            border-radius: 8px;
+            padding: 1.5rem 1rem 1.5rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
+            /* Subtle border with transparency */
+            color: #FFFFFF;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
             margin: 0 auto;
-            padding: 1rem 0rem;
-            color: rgba(255, 255, 255, 1);
+            margin-top: 1rem;
         }
 
-        .video-player-container {}
-
-        /* video section end */
-
-        /* Ways to Buy */
-        .ways-to-buy-section {
-            padding-top: 3rem;
-            padding-bottom: 3rem;
+        /* Circle with the number */
+        .mx-card-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #FFFFFF;
+            /* White background for the circle */
+            color: #000000;
+            /* Black text for contrast */
+            font-weight: bold;
+            font-size: 2rem;
+            margin-right: 1rem;
         }
 
-        .ways-to-buy-heading {
-            font-size: 38px;
-            color: rgba(0, 0, 0, 1);
+        /* Content styling */
+        .mx-card-content {
+            flex: 1;
+        }
+
+        .mx-card-title {
+            margin: 0 0 0.5rem 0;
+            text-align: left;
+
+            font-size: 1.75rem;
             font-weight: bold;
         }
 
-        .online-auction {
-            background-color: rgba(3, 28, 82, 1);
-            border-radius: 1rem;
-            padding: 1rem 2rem;
-            height: 12rem;
-        }
-
-        .marketplace {
-            background-color: rgba(35, 84, 184, 1);
-            border-radius: 1rem;
-            height: 12rem;
-        }
-
-
-        .online-auction h2 {
-            color: white;
-            font-weight: bolder;
-            font-size: 22px;
-            margin-top: 0.8rem;
-        }
-
-        .online-auction p {
-            color: white;
+        .mx-card-description {
+            text-align: left;
+            color: #b0b3b8;
             font-size: 12px;
         }
 
 
-        .marketplace h2 {
-            color: white;
-            font-weight: bolder;
-            font-size: 22px;
-        }
-
-        .marketplace p {
-            color: white;
-            font-size: 12px;
-        }
-
-        .ways-container {
-            padding-left: 10rem;
-            padding-right: 10rem;
-
-        }
-
-        @media (max-width: 768px) {
-            .ways-to-buy-section {
-                padding-top: 2rem;
-                padding-bottom: 2rem;
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .mx-card {
+                /* flex-direction: column; */
+                text-align: center;
+                /* padding: 1rem; */
             }
 
-            .ways-to-buy-heading {
-                font-size: 28px;
-                font-weight: bold;
-            }
-
-            .online-auction,
-            .marketplace {
-                height: auto;
-                padding: 1.5rem;
-                margin-top: 1rem;
-            }
-
-            .online-auction h2,
-            .marketplace h2 {
-                font-size: 18px;
-            }
-
-            .online-auction p,
-            .marketplace p {
-                font-size: 10px;
-            }
-
-            .ways-container {
-                padding-left: 2rem;
-                padding-right: 2rem;
+            .mx-card-circle {
+                margin-right: 1rem;
+                margin-bottom: 0.5rem;
             }
         }
 
-        /* Ways to buy end */
 
 
-        .cta-section {
-            padding-left: 11rem;
-            padding-right: 11rem;
+
+        /* video section end */
+
+        /* Success stories */
+        /* Success Stories Section */
+        .success-stories {
+            padding: 2rem 0;
+            text-align: center;
+            color: #333;
         }
 
-        .bg-cta-black {
-            background-color: var(--cta-background-black);
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
         }
 
-        .cta-black {
+        .section-subtitle {
+            font-size: 1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
 
+        /* Story Card Styling */
+        .story-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            position: relative;
+        }
+
+        .story-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .story-description {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Story Button */
+        .story-button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            position: absolute;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            transition: background-color 0.3s;
+        }
+
+        .story-button:hover {
+            background-color: #333;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 767px) {
+            .story-card {
+                margin-bottom: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.9rem;
+            }
+        }
+
+
+        /* Testimoanial section */
+        /* Testimonial Container */
+
+        .testimonial-section {
+            padding-top: 3rem;
+            padding-bottom: 8rem;
             display: flex;
             justify-content: center;
             flex-direction: column;
-            gap: 3rem;
             align-items: center;
-            padding-left: 3rem;
-            padding-right: 3rem;
-            padding-top: 3rem;
-            padding-bottom: 4rem;
-            border-radius: 30px;
-
+            background-color: #212429;
         }
 
-        .display-cta {
-            color: white;
-            font-size: 38px;
-            font-weight: 500;
-
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            min-height: 210px;
         }
+
+        /* Testimonial Card Styling */
+        .testimonial-card {
+            background-color: #1E1E21;
+            color: #ddd;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Author Styling */
+        .testimonial-author {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 0.2rem;
+        }
+
+        /* Position Styling */
+        .testimonial-position {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 1rem;
+        }
+
+        /* Testimonial Text Styling */
+        .testimonial-text {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            color: #bbbbbb;
+            /* font-style: italic; */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .testimonial-card {
+                padding: 1rem;
+                max-width: 100%;
+            }
+
+            .testimonial-author {
+                font-size: 1.1rem;
+            }
+
+            .testimonial-position {
+                font-size: 0.85rem;
+            }
+
+            .testimonial-text {
+                font-size: 0.95rem;
+            }
+
+            .testimonial-container {
+                min-height: unset;
+            }
+        }
+
+
+
 
         .black-cta-button>a.orange {
             background: linear-gradient(90deg, #FF2A01 0%, #FFB401 100%);
@@ -736,6 +825,60 @@
                 padding-right: 12rem !important;
             }
         }
+
+        .partner-section {
+            background-color: var(--mx-blue-grey);
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .partner-content {
+            background: #2354B8;
+            color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .partner-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .partner-content p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .partner-content a {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .partner-content a:hover {
+            text-decoration: underline;
+        }
+
+        .apply-btn {
+            background: linear-gradient(90deg, #FF2A01 0%, #FFB401 100%);
+
+            color: #fff;
+            border: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .apply-btn:hover {
+            background-color: #e06b3a;
+        }
     </style>
 
 </head>
@@ -860,380 +1003,333 @@
                     Our Solution: Comprehensive Resale Management
                 </h2>
                 <div class="our-solution-section-subheading">
-                    <p>MachineryMax is an extension of your business, turning potential equipment and logistical burdens
+                    <p>MachineryMax is an extension of your business, turning potential equipment and logistical
+                        burdens
                         into profitable opportunities. We offer:</p>
                 </div>
             </div>
         </div>
         <div class="row our-solution-container">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-3 our-solution-card" style="background-color: #1E1E21;">
-                <h3>Quarterly/Annual Inventory Sales</h3>
-            </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-3 our-solution-card" style="background-color: #1E1E21;">
-                <h3>Quarterly/Annual Inventory Sales</h3>
-            </div>
-            <div class="col-sm-1"></div>
+            <div class="col-sm-1 bg-black"></div>
+            <div class="col-sm-3 our-solution-card">
+                <h3 class="our-solution-card-heading">Quarterly/Annual Inventory Sales</h3>
+                <p class="our-solution-card-text">
+                    Liquidate excess inventory, including scratch-and-dent items, to reduce storage costs and free
+                    up
+                    capital.
 
-            <div class="col-sm-3 our-solution-card" style="background-color: #1E1E21;">
-                <h3>Quarterly/Annual Inventory Sales</h3>
-            </div>
-        </div>
-
-        <div class="row row-pad purchase-equipment-container">
-            <div class="col-sm-12">
-                <h2 class="purchase-equipments-heading  text-center">Purchase Equipment<br />
-                    in 3 Easy Steps</h2>
-            </div>
-
-            <div class="col-sm-4 speciality-xs-mt">
-                <div class="sell-container">
-                    <div>
-                        <h2 class="purchase-equipments-number">01</h2>
-                    </div>
-
-                    <div>
-                        <h3 class="purchase-equipment-heading">Register with MachineryMax</h3>
-                    </div>
-
-                    <div>
-                        <p class="purchase-equipment-text">Create your account for full access. You can add lots to your
-                            Watchlist, place bids, or make direct offers in the Marketplace.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-4 speciality-xs-mt">
-                <div class="sell-container">
-                    <div>
-                        <h2 class="purchase-equipments-number">02</h2>
-                    </div>
-
-                    <div>
-                        <h3 class="purchase-equipment-heading">Browse and Bid</h3>
-                    </div>
-
-                    <div>
-                        <p class="purchase-equipment-text">Explore hundreds of lots across dozens of categories to find
-                            exactly
-                            what you need. Use our search and filtering tools to refine your selections.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-4 speciality-xs-mt">
-                <div class="sell-container">
-                    <div>
-                        <h2 class="purchase-equipments-number">03</h2>
-                    </div>
-
-                    <div>
-                        <h3 class="purchase-equipment-heading">Register with MachineryMax</h3>
-                    </div>
-
-                    <div>
-                        <p class="purchase-equipment-text">Submit your Max Bid on the lots you&rsquo;re interested in.
-                            If
-                            you&rsquo;re the highest bidder, you&rsquo;ll receive an invoice along with detailed
-                            instructions
-                            for pickup or shipping.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row row-pad video-section">
-            <div class="col-sm-12">
-                <h2 class="text-center purchase-equipments-heading">
-                    Watch Our Step-by-Step <br> Buying Process
-                </h2>
-                <p class="text-center video-section-text">Get a comprehensive overview of how to buy on MachineryMax
-                    with our
-                    easy-to-follow video walkthrough.
-                    Learn how to register, browse, place bids, and secure your equipment — all in just a few minutes.
                 </p>
-
             </div>
-            <div class="col-sm-8 text-center">
-                <div class="embed-responsive embed-responsive-16by9" style="border-radius: 10px; overflow: hidden;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/09ZIHJai2HM"
-                        frameborder="0" allowfullscreen style="width: 100%; height: 100%;"></iframe>
-                </div>
+            <div class="col-sm-1 bg-black"></div>
+            <div class="col-sm-3 our-solution-card">
+                <h3 class="our-solution-card-heading">Market Expansion</h3>
+                <p class="our-solution-card-text">
+                    Leverage our extensive network for broader reach and faster sales.
+
+                </p>
             </div>
+            <div class="col-sm-1 bg-black"></div>
 
-        </div>
+            <div class="col-sm-3 our-solution-card">
+                <h3 class="our-solution-card-heading">White-Glove Service</h3>
+                <p class="our-solution-card-text">
+                    Handle every aspect of the process, from appraisal and marketing to closing sales and managing
+                    logistics, ensuring a seamless experience.
 
-        <div class="row row-pad ways-to-buy-section">
-            <div class="col-sm-12">
-                <h2 class="text-center ways-to-buy-heading">Two Ways to Buy</h2>
-            </div>
-        </div>
-
-        <div class="row row-pad" style="padding-bottom: 6rem;">
-            <div class="col-sm-12">
-                <div class="ways-container">
-                    <div class="col-sm-6 online-auction">
-                        <h2>Online Auction</h2>
-
-                        <p>Participate in real-time auctions to secure the equipment you need. Set a Max Bid or place
-                            the
-                            highest bid before the auction closes to win the lot.</p>
-                    </div>
-
-                    <div class="col-sm-1">&nbsp;</div>
-
-                    <div class="col-sm-5 marketplace">
-                        <h2>MachineryMax Marketplace</h2>
-
-                        <p>Browse a diverse selection of equipment available to Buy Now or Make an Offer.&nbsp;</p>
-                    </div>
-                </div>
+                </p>
             </div>
         </div>
 
-        <div class="row row-pad " style=" padding-bottom: 5rem;">
-            <div class="col-sm-12 cta-section">
-                <div class="bg-cta-black cta-black">
-                    <div class="display-cta">Need Financing?</div>
+        <div class="row our-solution-container">
+            <div class="col-sm-1 bg-black"></div>
+            <div class="col-sm-3 our-solution-card">
+                <h3 class="our-solution-card-heading">Customer Satisfaction</h3>
+                <p class="our-solution-card-text">
+                    Offer hassle-free trade-ins that enhance your brand’s reputation.
 
-                    <p class="text-white">MachineryMax offers financing options. It takes seconds to apply and will help
-                        you
-                        buy
-                        more equipment.</p>
+                </p>
+            </div>
+            <div class="col-sm-1 bg-black"></div>
+            <div class="col-sm-3 our-solution-card">
+                <h3 class="our-solution-card-heading">Operational Efficiency</h3>
+                <p class="our-solution-card-text">
+                    Focus on core activities while we handle the complexities of equipment resale.
+                </p>
+            </div>
+            <div class="col-sm-1 bg-black"></div>
 
-                    <div class="black-cta-button"><a class="orange" href="https://machinerymax.directcapital.com/"
-                            target="_blank">Apply Now </a></div>
-                </div>
+            <div class="col-sm-3 our-solution-card">
+                <h3 class="our-solution-card-heading">Data-Driven Insights</h3>
+                <p class="our-solution-card-text">
+                    Gain buyer behavior insights and bidding trends to refine strategies and boost sales performance
+                    (available for an additional cost).
+
+                </p>
+            </div>
+        </div>
+        <div class="row bg-black our-solution-container">
+            <div class="col-sm-12 text-center" style="padding-top: 2rem;padding-bottom: 2rem;">
+                <div class="black-cta-button"><a class="orange" href="https://machinerymax.directcapital.com/"
+                        target="_blank">Apply Now </a></div>
             </div>
         </div>
 
-        <div class="row key-features">
+
+
+        <div class="row  how-it-works-section">
             <div class="col-sm-12">
-                <h2 class="key-features-heading text-center">Key Features</h2>
+                <h2 class="text-center how-it-works-section-heading">
+                    How it works
+                </h2>
+
+
             </div>
-
-            <div class="col-sm-12">
-                <div class="row cards-container">
-                    <div class="col-sm-4 feature-card">
-                        <div class="icon-heading"><svg fill="none" height="52.5" viewbox="0 0 105 105" width="52.5"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect fill="#FAFAFA" height="103.806" rx="51.9031" width="103.806" x="0.952148"
-                                    y="0.951904">
-                                </rect>
-                                <g clip-path="url(#clip0_212_89)">
-                                    <path
-                                        d="M75.8161 42.8847C75.7341 42.0319 75.029 41.376 74.1762 41.376H69.2566V38.0963C69.2566 29.0607 61.8937 21.6978 52.8581 21.6978C43.8224 21.6978 36.4595 29.0607 36.4595 38.0963V41.376H31.5399C30.6872 41.376 29.982 42.0319 29.9001 42.8847L27.719 69.024C27.6535 69.9259 28.3258 70.7131 29.2278 70.7951C30.1297 70.8771 30.9168 70.1883 30.9987 69.2863L33.0486 44.6558H72.6676L75.6684 80.7326H57.7776V68.4337H61.4018C62.0412 69.8768 63.4843 70.8935 65.157 70.8935H66.7968C69.0599 70.8935 70.8965 69.0568 70.8965 66.7938V62.6942C70.8965 61.7923 70.1585 61.0543 69.2566 61.0543C68.3547 61.0543 67.6168 61.7923 67.6168 62.6942V66.7938C67.6168 67.2529 67.2561 67.6138 66.7968 67.6138H65.157C64.6978 67.6138 64.3371 67.2529 64.3371 66.7938V52.0351C64.3371 51.5759 64.6978 51.2152 65.157 51.2152H66.7968C67.2561 51.2152 67.6168 51.5759 67.6168 52.0351V56.1348C67.6168 57.0367 68.3547 57.7746 69.2566 57.7746C70.1585 57.7746 70.8965 57.0367 70.8965 56.1348V52.0351C70.8965 49.7721 69.0599 47.9355 66.7968 47.9355H65.157C63.4843 47.9355 62.0412 48.9522 61.4018 50.3953H44.3144C43.6749 48.9522 42.2318 47.9355 40.5591 47.9355H38.9193C36.6563 47.9355 34.8196 49.7721 34.8196 52.0351V66.7938C34.8196 69.0568 36.6563 70.8935 38.9193 70.8935H40.5591C42.2318 70.8935 43.6749 69.8768 44.3144 68.4337H47.9385V80.7326H30.0477L30.4577 75.8295C30.5232 74.9275 29.8508 74.1404 28.9489 74.0584C28.047 73.9764 27.2599 74.6651 27.1779 75.567C27.1779 75.567 26.6203 82.2084 26.6203 82.2412C26.5548 83.1267 27.2763 84.0123 28.2602 84.0123C28.2602 84.0123 77.4395 84.0123 77.4559 84.0123C78.4071 84.0123 79.1613 83.1924 79.0958 82.2412L75.8161 42.8847ZM65.9769 41.376H39.7392V38.0963C39.7392 30.8645 45.6263 24.9775 52.8581 24.9775C60.0898 24.9775 65.9769 30.8645 65.9769 38.0963V41.376ZM41.3791 66.7938C41.3791 67.2529 41.0183 67.6138 40.5591 67.6138H38.9193C38.4601 67.6138 38.0993 67.2529 38.0993 66.7938V52.0351C38.0993 51.5759 38.4601 51.2152 38.9193 51.2152H40.5591C41.0183 51.2152 41.3791 51.5759 41.3791 52.0351V66.7938ZM44.6588 53.675H61.0574V57.7746H44.6588V53.675ZM54.4979 80.7326H51.2182V68.4337H54.4979V80.7326ZM44.6588 65.154V61.0543H61.0574V65.154H44.6588Z"
-                                        fill="url(#paint0_linear_212_89)"></path>
-                                </g>
-                                <defs>
-                                    <lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_212_89"
-                                        x1="26.6162" x2="79.0998" y1="52.855" y2="52.855">
-                                        <stop stop-color="#FF2A01"></stop>
-                                        <stop offset="1" stop-color="#FFB401"></stop>
-                                    </lineargradient>
-                                    <clippath id="clip0_212_89">
-                                        <rect fill="white" height="62.2833" transform="translate(21.7139 21.7134)"
-                                            width="62.2833"></rect>
-                                    </clippath>
-                                </defs>
-                            </svg>
-                            <h2>Watchlist</h2>
-                        </div>
-
-
-                        <p>Track and receive updates on your favorite lots.</p>
-                    </div>
-
-                    <div class="col-sm-4 feature-card">
-                        <div class="icon-heading">
-                            <svg fill="none" height="52.5" viewbox="0 0 105 105" width="52.5"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect fill="#FAFAFA" height="103.806" rx="51.9031" width="103.806" x="0.765625"
-                                    y="0.951904">
-                                </rect>
-                                <g clip-path="url(#clip0_212_96)">
-                                    <path
-                                        d="M66.6003 33.1866C67.5017 33.1866 68.2393 32.449 68.2393 31.5476V26.6305C68.2393 23.926 66.0267 21.7134 63.3222 21.7134H43.6538C40.9494 21.7134 38.7367 23.926 38.7367 26.6305V43.0208C38.7367 45.7252 40.9494 47.9379 43.6538 47.9379H48.5709V54.4941C47.7514 54.4941 46.9811 54.7236 46.309 55.0677C45.4731 54.7071 44.5717 54.4941 43.6538 54.4941C40.0315 54.4941 37.0977 57.4279 37.0977 61.0502C37.0977 61.9517 37.8352 62.6893 38.7367 62.6893C39.6381 62.6893 40.3757 61.9517 40.3757 61.0502C40.3757 59.2472 41.8509 57.7721 43.6538 57.7721C43.7521 57.7721 43.8505 57.8049 43.9488 57.8213C43.7685 58.313 43.6538 58.8539 43.6538 59.4112C43.6538 60.6732 44.1291 61.8205 44.9159 62.6893C44.1291 63.5579 43.6538 64.7052 43.6538 65.9673C43.6538 67.4588 44.3258 68.7864 45.3748 69.7043C45.1617 69.983 45.0142 70.2944 44.8667 70.6221C44.4897 70.7697 44.08 70.8844 43.6538 70.8844C41.8509 70.8844 40.3757 69.4093 40.3757 67.6064C40.3757 66.7049 39.6381 65.9673 38.7367 65.9673C37.8352 65.9673 37.0977 66.7049 37.0977 67.6064C37.0977 69.2618 37.7369 70.7369 38.7367 71.9006V77.4406C38.7367 81.0628 41.6705 83.9967 45.2928 83.9967H58.4051C62.0274 83.9967 64.9612 81.0628 64.9612 77.4406V61.0502C64.9612 57.4279 62.0274 54.4941 58.4051 54.4941V47.9379H63.3222C66.0267 47.9379 68.2393 45.7252 68.2393 43.0208V38.1037C68.2393 37.2023 67.5017 36.4647 66.6003 36.4647C65.6988 36.4647 64.9612 37.2023 64.9612 38.1037V43.0208C64.9612 43.9223 64.2237 44.6599 63.3222 44.6599H43.6538C42.7523 44.6599 42.0148 43.9223 42.0148 43.0208V26.6305C42.0148 25.729 42.7523 24.9914 43.6538 24.9914H63.3222C64.2237 24.9914 64.9612 25.729 64.9612 26.6305V31.5476C64.9612 32.449 65.6988 33.1866 66.6003 33.1866ZM46.4074 80.7186H45.2928C43.4899 80.7186 42.0148 79.2435 42.0148 77.4406V73.933C42.5393 74.0642 43.0802 74.1625 43.6538 74.1625C44.0307 74.1625 44.3914 74.1133 44.7519 74.0642C45.1126 75.1459 45.8009 76.0637 46.7516 76.6702C46.3418 77.3749 46.1123 78.2109 46.1123 79.0796C46.1123 79.6532 46.2271 80.2105 46.4074 80.7186ZM51.849 47.9379H55.127V54.4941H51.849V47.9379ZM58.4051 57.7721C60.208 57.7721 61.6832 59.2472 61.6832 61.0502V77.4406C61.6832 79.2435 60.208 80.7186 58.4051 80.7186H51.0295C50.128 80.7186 49.3904 79.9811 49.3904 79.0796C49.3904 78.1781 50.128 77.4406 51.0295 77.4406H56.7661C57.6675 77.4406 58.4051 76.703 58.4051 75.8015C58.4051 74.9001 57.6675 74.1625 56.7661 74.1625H49.3904C48.489 74.1625 47.7514 73.4249 47.7514 72.5235C47.7514 71.622 48.489 70.8844 49.3904 70.8844H56.7661C57.6675 70.8844 58.4051 70.1468 58.4051 69.2454C58.4051 68.3439 57.6675 67.6064 56.7661 67.6064H48.5709C47.6694 67.6064 46.9319 66.8688 46.9319 65.9673C46.9319 65.0659 47.6694 64.3283 48.5709 64.3283H56.7661C57.6675 64.3283 58.4051 63.5907 58.4051 62.6893C58.4051 61.7878 57.6675 61.0502 56.7661 61.0502H48.5709C47.6694 61.0502 46.9319 60.3126 46.9319 59.4112C46.9319 58.5097 47.6694 57.7721 48.5709 57.7721H58.4051Z"
-                                        fill="url(#paint0_linear_212_96)"></path>
-                                    <path
-                                        d="M52.9344 32.367H55.9468C56.8527 32.367 57.5858 31.6331 57.5858 30.728C57.5858 29.8228 56.8527 29.0889 55.9468 29.0889H55.1272V28.2694C55.1272 27.3642 54.3942 26.6304 53.4882 26.6304C52.5823 26.6304 51.8492 27.3642 51.8492 28.2694V29.2767C50.4277 29.7381 49.3906 31.0593 49.3906 32.6327C49.3906 34.1605 50.3654 35.5122 51.814 35.9956L54.1253 36.7655C54.2341 36.8015 54.3077 36.9032 54.3077 37.0184C54.3077 37.1649 54.1893 37.2841 54.042 37.2841H51.0297C50.1237 37.2841 49.3906 38.018 49.3906 38.9231C49.3906 39.8283 50.1237 40.5622 51.0297 40.5622H51.8492V41.3817C51.8492 42.2868 52.5823 43.0207 53.4882 43.0207C54.3942 43.0207 55.1272 42.2868 55.1272 41.3817V40.3744C56.5487 39.913 57.5858 38.5918 57.5858 37.0184C57.5858 35.4906 56.611 34.1389 55.1625 33.6555L52.8512 32.8856C52.7423 32.8496 52.6687 32.7479 52.6687 32.6327C52.6687 32.4862 52.7871 32.367 52.9344 32.367Z"
-                                        fill="url(#paint1_linear_212_96)"></path>
-                                </g>
-                                <defs>
-                                    <lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_212_96"
-                                        x1="37.0977" x2="68.2393" y1="52.855" y2="52.855">
-                                        <stop stop-color="#FF2A01"></stop>
-                                        <stop offset="1" stop-color="#FFB401"></stop>
-                                    </lineargradient>
-                                    <lineargradient gradientunits="userSpaceOnUse" id="paint1_linear_212_96"
-                                        x1="49.3906" x2="57.5858" y1="34.8255" y2="34.8255">
-                                        <stop stop-color="#FF2A01"></stop>
-                                        <stop offset="1" stop-color="#FFB401"></stop>
-                                    </lineargradient>
-                                    <clippath id="clip0_212_96">
-                                        <rect fill="white" height="62.2833" transform="translate(21.5273 21.7134)"
-                                            width="62.2833"></rect>
-                                    </clippath>
-                                </defs>
-                            </svg>
-
-                            <h2>Max Bid</h2>
-                        </div>
-
-
-                        <p>MachineryMax automatically increases your bid in set increments, ensuring you stay in the
-                            lead up
-                            to
-                            your Max Bid.</p>
-                    </div>
-
-                    <div class="col-sm-4 feature-card">
-                        <div class="icon-heading">
-                            <svg fill="none" height="52.5" viewbox="0 0 105 105" width="52.5"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect fill="#FAFAFA" height="103.806" rx="51.9031" width="103.806" x="0.579102"
-                                    y="0.95166">
-                                </rect>
-                                <g clip-path="url(#clip0_212_105)">
-                                    <path
-                                        d="M71.8415 22.6863H33.1193C32.2319 22.6863 31.5059 23.4123 31.5059 24.2997V32.3668C31.5059 33.2542 32.2319 33.9803 33.1193 33.9803C34.0067 33.9803 34.7327 33.2542 34.7327 32.3668V25.9131H70.2281V45.2742H34.7327V38.8205C34.7327 37.9332 34.0067 37.2071 33.1193 37.2071C32.2319 37.2071 31.5059 37.9332 31.5059 38.8205V46.8877C31.5059 47.775 32.2319 48.5011 33.1193 48.5011H47.6401V54.9548C46.8334 54.9548 46.0751 55.1807 45.4136 55.5195C44.5907 55.1645 43.7034 54.9548 42.7998 54.9548C39.2341 54.9548 36.3461 57.8428 36.3461 61.4085V67.8622C36.3461 69.4918 36.9754 70.9438 37.9596 72.0894V77.5428C37.9596 81.1084 40.8476 83.9965 44.4133 83.9965H57.3207C60.8864 83.9965 63.7744 81.1084 63.7744 77.5428V72.7025C63.7744 71.8151 63.0483 71.0891 62.1609 71.0891C61.2736 71.0891 60.5475 71.8151 60.5475 72.7025V77.5428C60.5475 79.3175 59.0954 80.7696 57.3207 80.7696H50.0603C49.1729 80.7696 48.4468 80.0436 48.4468 79.1562C48.4468 78.2688 49.1729 77.5428 50.0603 77.5428H55.7072C56.5946 77.5428 57.3207 76.8167 57.3207 75.9293C57.3207 75.042 56.5946 74.3159 55.7072 74.3159H48.4468C47.5595 74.3159 46.8334 73.5898 46.8334 72.7025C46.8334 71.8151 47.5595 71.0891 48.4468 71.0891H55.7072C56.5946 71.0891 57.3207 70.363 57.3207 69.4756C57.3207 68.5883 56.5946 67.8622 55.7072 67.8622H47.6401C46.7527 67.8622 46.0267 67.1361 46.0267 66.2488C46.0267 65.3614 46.7527 64.6354 47.6401 64.6354H55.7072C56.5946 64.6354 57.3207 63.9093 57.3207 63.0219C57.3207 62.1346 56.5946 61.4085 55.7072 61.4085H47.6401C46.7527 61.4085 46.0267 60.6824 46.0267 59.7951C46.0267 58.9077 46.7527 58.1816 47.6401 58.1816H57.3207C59.0954 58.1816 60.5475 59.6337 60.5475 61.4085V66.2488C60.5475 67.1361 61.2736 67.8622 62.1609 67.8622C63.0483 67.8622 63.7744 67.1361 63.7744 66.2488V61.4085C63.7744 57.8428 60.8864 54.9548 57.3207 54.9548V48.5011H71.8415C72.7289 48.5011 73.4549 47.775 73.4549 46.8877V24.2997C73.4549 23.4123 72.7289 22.6863 71.8415 22.6863ZM39.573 67.8622V61.4085C39.573 59.6337 41.0251 58.1816 42.7998 58.1816C42.8966 58.1816 42.9935 58.2139 43.0902 58.23C42.9128 58.714 42.7998 59.2465 42.7998 59.7951C42.7998 61.0373 43.2677 62.1668 44.0422 63.0219C43.2677 63.877 42.7998 65.0064 42.7998 66.2488C42.7998 67.7169 43.4613 69.0238 44.4939 69.9273C44.2842 70.2017 44.139 70.5083 43.9938 70.8309C43.6227 70.9761 43.2193 71.0891 42.7998 71.0891C41.0251 71.0891 39.573 69.6369 39.573 67.8622ZM45.5104 80.7696H44.4133C42.6385 80.7696 41.1864 79.3175 41.1864 77.5428V74.09C41.7027 74.2191 42.2352 74.3159 42.7998 74.3159C43.1709 74.3159 43.5259 74.2675 43.8808 74.2191C44.2358 75.2839 44.9134 76.1874 45.8492 76.7844C45.4459 77.4782 45.22 78.301 45.22 79.1562C45.22 79.7209 45.3329 80.2694 45.5104 80.7696ZM54.0938 54.9548H50.867V48.5011H54.0938V54.9548Z"
-                                        fill="url(#paint0_linear_212_105)"></path>
-                                    <path
-                                        d="M60.9516 42.0473C63.6207 42.0473 65.7919 39.8761 65.7919 37.207V33.9802C65.7919 31.3111 63.6207 29.1399 60.9516 29.1399H57.7248C56.8337 29.1399 56.1113 29.8623 56.1113 30.7533V40.4339C56.1113 41.3249 56.8337 42.0473 57.7248 42.0473H60.9516ZM59.3382 32.3667H60.9516C61.841 32.3667 62.565 33.0907 62.565 33.9802V37.207C62.565 38.0965 61.841 38.8204 60.9516 38.8204H59.3382V32.3667Z"
-                                        fill="url(#paint1_linear_212_105)"></path>
-                                    <path
-                                        d="M53.6897 40.4339V30.7533C53.6897 29.8623 52.9673 29.1399 52.0763 29.1399C51.1853 29.1399 50.4629 29.8623 50.4629 30.7533V40.4339C50.4629 41.3249 51.1853 42.0473 52.0763 42.0473C52.9673 42.0473 53.6897 41.3249 53.6897 40.4339Z"
-                                        fill="url(#paint2_linear_212_105)"></path>
-                                    <path
-                                        d="M43.2035 29.1399H40.7833C39.8923 29.1399 39.1699 29.8623 39.1699 30.7533V40.4339C39.1699 41.3249 39.8923 42.0473 40.7833 42.0473H44.0102C46.2342 42.0473 48.0438 40.2377 48.0438 38.0137C48.0438 36.8533 47.5506 35.8055 46.7636 35.0689C47.0653 34.5033 47.2371 33.8581 47.2371 33.1735C47.2371 30.9495 45.4275 29.1399 43.2035 29.1399ZM42.3968 32.3667H43.2035C43.6486 32.3667 44.0102 32.7283 44.0102 33.1735C44.0102 33.6186 43.6486 33.9802 43.2035 33.9802H42.3968V32.3667ZM44.0102 38.8204H42.3968V37.207H44.0102C44.4553 37.207 44.8169 37.5686 44.8169 38.0137C44.8169 38.4588 44.4553 38.8204 44.0102 38.8204Z"
-                                        fill="url(#paint3_linear_212_105)"></path>
-                                </g>
-                                <defs>
-                                    <lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_212_105"
-                                        x1="31.5059" x2="73.4549" y1="53.3414" y2="53.3414">
-                                        <stop stop-color="#FF2A01"></stop>
-                                        <stop offset="1" stop-color="#FFB401"></stop>
-                                    </lineargradient>
-                                    <lineargradient gradientunits="userSpaceOnUse" id="paint1_linear_212_105"
-                                        x1="56.1113" x2="65.7919" y1="35.5936" y2="35.5936">
-                                        <stop stop-color="#FF2A01"></stop>
-                                        <stop offset="1" stop-color="#FFB401"></stop>
-                                    </lineargradient>
-                                    <lineargradient gradientunits="userSpaceOnUse" id="paint2_linear_212_105"
-                                        x1="50.4629" x2="53.6897" y1="35.5936" y2="35.5936">
-                                        <stop stop-color="#FF2A01"></stop>
-                                        <stop offset="1" stop-color="#FFB401"></stop>
-                                    </lineargradient>
-                                    <lineargradient gradientunits="userSpaceOnUse" id="paint3_linear_212_105"
-                                        x1="39.1699" x2="48.0438" y1="35.5936" y2="35.5936">
-                                        <stop stop-color="#FF2A01"></stop>
-                                        <stop offset="1" stop-color="#FFB401"></stop>
-                                    </lineargradient>
-                                    <clippath id="clip0_212_105">
-                                        <rect fill="white" height="62.2833" transform="translate(21.3398 21.7131)"
-                                            width="62.2833"></rect>
-                                    </clippath>
-                                </defs>
-                            </svg>
-                            <h2>Proxy Bidding</h2>
-                        </div>
-
-
-
-                        <p>Auctions extend by 5 minutes if a bid is placed within the final 5 minutes.</p>
-                    </div>
-                </div>
-
+            <div class="col-sm-10 text-center">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <p class="text-white text-center key-features-text">Sign up now to explore our listings and
-                            user-friendly platform. Whether you&rsquo;re looking for a great deal at auction or a
-                            straightforward marketplace experience, MachineryMax is your trusted partner.</p>
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="mx-card">
+                            <div class="mx-card-circle">01</div>
+                            <div class="mx-card-content">
+                                <h3 class="mx-card-title">Customer Trade-In</h3>
+                                <p class="mx-card-description">Your customer upgrades their equipment, trading in their
+                                    old equipment.</p>
+                            </div>
+                        </div>
 
-                        <div class="key-features-cta"><a class="orange" href="https://machinerymax.com/Account/Register"
-                                target="_blank">Sign Up Now </a></div>
+
                     </div>
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="mx-card">
+                            <div class="mx-card-circle">02</div>
+                            <div class="mx-card-content">
+                                <h3 class="mx-card-title">MachineryMax Engagement</h3>
+                                <p class="mx-card-description">We appraise and prepare the equipment for sale.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="mx-card">
+                            <div class="mx-card-circle">03</div>
+                            <div class="mx-card-content">
+                                <h3 class="mx-card-title">Remarketing and Sale</h3>
+                                <p class="mx-card-description">The equipment is sold via our best-in-class auction and
+                                    marketplace platform, securing the best returns.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="mx-card">
+                            <div class="mx-card-circle">04</div>
+                            <div class="mx-card-content">
+                                <h3 class="mx-card-title">Efficient Equipment Transfer</h3>
+                                <p class="mx-card-description">We assist buyers with arranging transportation
+                                    facilitating quick and seamless transfers.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
                 </div>
+            </div>
+
+        </div>
+
+
+        <!-- <div class="row success-stories">
+            <div class="col-sm-12 text-center">
+                <h2 class="section-title">Success Stories</h2>
+                <p class="section-subtitle">
+                    Discover how MachineryMax has helped businesses achieve remarkable results with our comprehensive
+                    equipment remarketing solutions.
+                </p>
             </div>
         </div>
 
-        <div class="row why-mm">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="story-card">
+                    <h3 class="story-title">Transforming Trade-Ins: CMS/DMS Turned Customer Trade-Ins Into Profitable
+                        Revenue Streams</h3>
+                    <p class="story-description">
+                        Lorem ipsum dolor sit amet consectetur. Egestas quam risus ut urna. Varius neque.
+                    </p>
+                    <button class="story-button">
+                        <span>&rarr;</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="story-card">
+                    <h3 class="story-title">Inventory Liquidation Boost: A Major Manufacturer Cleared Scratch-And-Dent
+                        Items, Unlocking Cash Flow</h3>
+                    <p class="story-description">
+                        Lorem ipsum dolor sit amet consectetur. Egestas quam risus ut urna. Varius neque.
+                    </p>
+                    <button class="story-button">
+                        <span>&rarr;</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="story-card">
+                    <h3 class="story-title">Shop Closure Success: A High-End Woodworking Company Maximized Returns
+                        During A Complete Shop Closure</h3>
+                    <p class="story-description">
+                        Lorem ipsum dolor sit amet consectetur. Egestas quam risus ut urna. Varius neque.
+                    </p>
+                    <button class="story-button">
+                        <span>&rarr;</span>
+                    </button>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="row  testimonial-section">
             <div class="col-sm-12">
-                <h2 class="ways-to-buy-heading">Why Choose<br />
-                    MachineryMax?</h2>
+                <h2 class="text-center how-it-works-section-heading">
+                    Testimonials
+                </h2>
+
+
             </div>
+            <div class="col-sm-10">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="testimonial-container">
+                            <div class="testimonial-card">
+                                <h4 class="testimonial-author">Mark Craig</h4>
+                                <p class="testimonial-position">Vice President, SCM Group NA</p>
+                                <p class="testimonial-text">
+                                    “Our partnership with MachineryMax has streamlined our operations and enhanced our
+                                    customer relations by
+                                    enabling us to accept trade-ins and generate an additional revenue stream by selling
+                                    used equipment.”
+                                </p>
+                            </div>
+                        </div>
 
-            <div class="col-sm-12">
-                <div class="why-mm-cards-container">
-                    <div class="why-mm-card">
-                        <h2>Extensive Inventory</h2>
-
-                        <p>Find machinery for all your needs across multiple categories.</p>
                     </div>
-
-                    <div class="why-mm-card">
-                        <h2>Ease of Use</h2>
-
-                        <p>Our intuitive platform makes finding and buying equipment simple.</p>
-                    </div>
-
-                    <div class="why-mm-card">
-                        <h2>Reliable Support</h2>
-
-                        <p>Shop with confidence and enjoy support whenever you need it.</p>
+                    <div class="col-sm-6">
+                        <div class="testimonial-container">
+                            <div class="testimonial-card">
+                                <h4 class="testimonial-author">Jordan Hawkins</h4>
+                                <p class="testimonial-position">Product Manager, Weinig USA</p>
+                                <p class="testimonial-text">
+                                    “MachineryMax has been instrumental in helping us efficiently manage excess
+                                    inventory and improve our bottom line through targeted, profitable sales.”
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+
+            <!-- <div class="row row-pad " style=" padding-bottom: 5rem;">
+                <div class="col-sm-12 cta-section">
+                    <div class="bg-cta-black cta-black">
+                        <div class="display-cta">Need Financing?</div>
+
+                        <p class="text-white">MachineryMax offers financing options. It takes seconds to apply and will
+                            help
+                            you
+                            buy
+                            more equipment.</p>
+
+                        <div class="black-cta-button"><a class="orange" href="https://machinerymax.directcapital.com/"
+                                target="_blank">Apply Now </a></div>
+                    </div>
+                </div>
+            </div> -->
+
+
         </div>
 
-        <div class="row" style="padding-bottom: 5rem;">
-            <div class="col-sm-12 cta-section">
-                <div class="bg-cta-black cta-black">
-                    <div class="display-cta">Have Equipment to Sell?</div>
 
-                    <p class="text-white">Maximize the value of your equipment with MachineryMax. Whether you&rsquo;re
-                        selling a
-                        complete plant or individual items, our turnkey solution ensures you get the best return on your
-                        assets.
-                        Contact us today to start maximizing your equipment&rsquo;s value!</p>
+        <div class="partner-section row">
 
-                    <div class="black-cta-button"><a class="blue" href="https://machinerymax.com/SellYourEquipment/"
-                            target="_blank">Get Started Today </a></div>
+            <div class="col-sm-10">
+                <div class="partner-content">
+                    <h2>Partner with us today to enhance your customer offerings and drive new sales</h2>
+                    <p>Visit us at <a href="https://www.machinerymax.com" target="_blank">www.machinerymax.com</a>
+                        or contact us at <a href="mailto:sales@machinerymax.com">sales@machinerymax.com</a> |
+                        866-988-4667</p>
+                    <button class="apply-btn">Apply Now</button>
                 </div>
             </div>
+
         </div>
-    </div>
-    <script type="text/javascript">
-        // Function to remove the 'transparentBackground' class and add 'container-fluid' class
-        function removeTransparentBackground(element) {
-            element.classList.remove('container');
-            element.classList.add('container-fluid');
-        }
 
-        // Function to observe changes to the DOM
-        function observeDOMChanges() {
-            const targetNode = document.body;
-            const config = { childList: true, subtree: true };
+        <script type="text/javascript">
+            // Function to remove the 'transparentBackground' class and add 'container-fluid' class
+            function removeTransparentBackground(element) {
+                element.classList.remove('container');
+                element.classList.add('container-fluid');
+            }
 
-            const observer = new MutationObserver(function (mutations) {
-                mutations.forEach(function (mutation) {
-                    if (mutation.type === 'childList') {
-                        const containerElement = document.querySelector('main>div.container');
-                        console.log(containerElement)
-                        if (containerElement) {
-                            removeTransparentBackground(containerElement);
-                            observer.disconnect();
+            // Function to observe changes to the DOM
+            function observeDOMChanges() {
+                const targetNode = document.body;
+                const config = { childList: true, subtree: true };
+
+                const observer = new MutationObserver(function (mutations) {
+                    mutations.forEach(function (mutation) {
+                        if (mutation.type === 'childList') {
+                            const containerElement = document.querySelector('main>div.container');
+                            console.log(containerElement)
+                            if (containerElement) {
+                                removeTransparentBackground(containerElement);
+                                observer.disconnect();
+                            }
                         }
-                    }
+                    });
                 });
-            });
 
-            observer.observe(targetNode, config);
-        }
+                observer.observe(targetNode, config);
+            }
 
-        // Start observing the DOM for changes
-        observeDOMChanges();
-    </script><!-- <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script> -->
+            // Start observing the DOM for changes
+            observeDOMChanges();
+
+            // async function fetchPosts() {
+            //     try {
+            //         const response = await fetch('https://blog.machinerymax.com/wp-json/wp/v2/posts?per_page=5');
+            //         const posts = await response.json();
+            //         let htmlContent = '';
+
+            //         posts.forEach(post => {
+            //             const tempDiv = document.createElement('div');
+            //             tempDiv.innerHTML = post.excerpt.rendered;
+
+            //             // Strip out all HTML, keeping only the plain text
+            //             const plainTextContent = tempDiv.innerText;
+
+            //             htmlContent += `
+            //   <div class="post">
+            //     <h2>${post.title.rendered}</h2>
+            //     <div>${plainTextContent}</div>
+            //     <a href="${post.link}" target="_blank">Read more</a>
+            //   </div>`;
+            //         });
+
+            //         console.log(htmlContent)
+            //     } catch (error) {
+            //         console.error('Error fetching posts:', error);
+            //     }
+            // }
+
+            // fetchPosts();
+        </script><!-- <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script> -->
 </body>
 
 </html>
