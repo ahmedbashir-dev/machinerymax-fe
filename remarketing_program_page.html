@@ -443,43 +443,178 @@
         /* Success stories */
         /* Success Stories Section */
         .success-stories {
-            padding: 2rem 0;
+            display: flex;
+            /* Use Flexbox for equal height */
+            align-items: stretch;
+            /* Stretch items to the same height */
+            padding-left: 5rem;
+            padding-right: 5rem;
             text-align: center;
             color: #333;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .success-stories .col-sm-4,
+        .success-stories .col-sm-5 {
+            display: flex;
+            /* Flexbox within columns */
+            flex-direction: column;
+            /* Align content vertically */
+            justify-content: center;
+
+            /* max-width: 50%; */
+        }
+
+        .success-stories>.col-sm-5 {
+            padding-top: 5rem;
+            color: #585A5C;
+
+
         }
 
         .section-title {
-            font-size: 2rem;
+            font-size: 3rem;
+            /* Adjust title size */
             font-weight: bold;
-            margin-bottom: 0.5rem;
+            text-align: center;
         }
 
         .section-subtitle {
-            font-size: 1rem;
-            color: #666;
-            max-width: 700px;
-            margin: 0 auto 2rem;
+            font-size: 1.5rem;
+            /* Adjust paragraph size */
+            text-align: left;
+        }
+
+        @media (max-width: 767px) {
+            .success-stories {
+                display: block;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            .success-stories .col-sm-4,
+            .success-stories .col-sm-5 {
+                padding: 10px;
+                /* Reduce padding for smaller screens */
+            }
         }
 
         /* Story Card Styling */
-        .story-card {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            position: relative;
+
+        .dynamic-content {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-bottom: 3rem;
+            display: flex;
+            /* flex-wrap: wrap; */
+            gap: 15px;
+            flex-direction: row;
+
+            justify-content: center;
+            width: 100%;
         }
 
+        .carousel-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            /* Max width for large screens */
+            overflow: hidden;
+            /* Hide overflow but allow scrolling */
+            display: flex;
+            /* justify-content: center; */
+        }
+
+        .carousel-items {
+            display: flex;
+            transition: transform 0.5s ease;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .story-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            width: 300px;
+            /* Fixed width for each card */
+            background-color: #fff;
+            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 5px;
+            padding: 20px;
+            margin-right: 15px;
+        }
+
+        .arrows {
+            padding-right: 15rem;
+            gap: 1rem;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+
+        .carousel-arrow {
+
+            /* transform: translateY(-50%); */
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            /* padding: 20px; */
+            cursor: pointer;
+            height: 40px;
+            width: 40px;
+            border: none;
+            border-radius: 10%;
+            z-index: 2;
+            font-size: 18px;
+
+        }
+
+        .left-arrow {
+            /* left: -60px; */
+            /* Move left arrow outside carousel */
+        }
+
+        .right-arrow {
+            /* right: -60px; */
+            /* Move right arrow outside carousel */
+        }
+
+
+
+        /* .story-card {
+            display: flex;
+            flex-direction: column;
+
+            justify-content: space-between;
+            height: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+
+        } */
+
+
+
         .story-title {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: bold;
-            margin-bottom: 0.5rem;
+            /* margin-bottom: 0.5rem; */
+        }
+
+        .story-footer {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
         }
 
         .story-description {
             color: #666;
-            font-size: 0.9rem;
+            flex: 1;
+            font-size: 1.2rem;
             margin-bottom: 1.5rem;
         }
 
@@ -496,10 +631,11 @@
             justify-content: center;
             font-size: 1.2rem;
             cursor: pointer;
-            position: absolute;
+            /* position: absolute; */
             bottom: 1.5rem;
             right: 1.5rem;
             transition: background-color 0.3s;
+            margin-left: auto;
         }
 
         .story-button:hover {
@@ -508,17 +644,35 @@
 
         /* Responsive Adjustments */
         @media (max-width: 767px) {
+            .carousel-items {
+                display: flex;
+                transition: transform 0.5s ease;
+                width: 100%;
+                /* Ensure carousel takes up the full width */
+            }
+
+            .arrows {
+                justify-content: flex-end;
+            }
+
             .story-card {
+                /* width: 100%; */
+                /* Ensure each card takes full width on mobile */
+                margin-right: 5px;
                 margin-bottom: 1.5rem;
+                /* Remove margin between cards on mobile */
             }
 
             .section-title {
-                font-size: 1.5rem;
+                font-size: 2.5rem;
             }
 
             .section-subtitle {
-                font-size: 0.9rem;
+                font-size: 1.2rem;
+                text-align: center;
             }
+
+
         }
 
 
@@ -628,35 +782,6 @@
 
 
 
-        @media (max-width: 767px) {
-            .display-cta {
-                font-size: 28px;
-                text-align: center;
-            }
-
-            .cta-section {
-                padding-left: 3rem;
-                padding-right: 3rem;
-            }
-
-            .cta-black p {
-                text-align: center;
-            }
-
-            .cta-black {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                gap: 3rem;
-                align-items: center;
-                padding-left: 1rem;
-                padding-right: 1rem;
-                padding-top: 3rem;
-                padding-bottom: 5rem;
-                border-radius: 30px;
-
-            }
-        }
 
 
 
@@ -878,6 +1003,16 @@
 
         .apply-btn:hover {
             background-color: #e06b3a;
+        }
+
+        @media (max-width: 768px) {
+            .partner-content h2 {
+                font-size: 2rem;
+            }
+
+            .partner-content p {
+                font-size: 1.5rem;
+            }
         }
     </style>
 
@@ -1142,56 +1277,36 @@
         </div>
 
 
-        <!-- <div class="row success-stories">
-            <div class="col-sm-12 text-center">
+        <div class="row success-stories">
+            <div class="col-sm-4 ">
+
                 <h2 class="section-title">Success Stories</h2>
+
+
+            </div>
+            <div class="col-sm-5 col-sm-offset-2 ">
                 <p class="section-subtitle">
-                    Discover how MachineryMax has helped businesses achieve remarkable results with our comprehensive
+                    Discover how MachineryMax has helped businesses achieve remarkable results with our
+                    comprehensive
                     equipment remarketing solutions.
                 </p>
             </div>
         </div>
+        <div class="arrows">
 
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="story-card">
-                    <h3 class="story-title">Transforming Trade-Ins: CMS/DMS Turned Customer Trade-Ins Into Profitable
-                        Revenue Streams</h3>
-                    <p class="story-description">
-                        Lorem ipsum dolor sit amet consectetur. Egestas quam risus ut urna. Varius neque.
-                    </p>
-                    <button class="story-button">
-                        <span>&rarr;</span>
-                    </button>
+            <button class="carousel-arrow left-arrow">&#8592;</button>
+            <button class="carousel-arrow right-arrow">&#8594;</button>
+        </div>
+
+        <div class="row dynamic-content">
+
+            <div class="carousel-wrapper">
+                <div id="carousel-items" class="carousel-items">
+                    <!-- Carousel items dynamically injected here -->
                 </div>
             </div>
+        </div>
 
-            <div class="col-sm-4">
-                <div class="story-card">
-                    <h3 class="story-title">Inventory Liquidation Boost: A Major Manufacturer Cleared Scratch-And-Dent
-                        Items, Unlocking Cash Flow</h3>
-                    <p class="story-description">
-                        Lorem ipsum dolor sit amet consectetur. Egestas quam risus ut urna. Varius neque.
-                    </p>
-                    <button class="story-button">
-                        <span>&rarr;</span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="story-card">
-                    <h3 class="story-title">Shop Closure Success: A High-End Woodworking Company Maximized Returns
-                        During A Complete Shop Closure</h3>
-                    <p class="story-description">
-                        Lorem ipsum dolor sit amet consectetur. Egestas quam risus ut urna. Varius neque.
-                    </p>
-                    <button class="story-button">
-                        <span>&rarr;</span>
-                    </button>
-                </div>
-            </div>
-        </div> -->
 
         <div class="row  testimonial-section">
             <div class="col-sm-12">
@@ -1235,22 +1350,7 @@
 
 
 
-            <!-- <div class="row row-pad " style=" padding-bottom: 5rem;">
-                <div class="col-sm-12 cta-section">
-                    <div class="bg-cta-black cta-black">
-                        <div class="display-cta">Need Financing?</div>
 
-                        <p class="text-white">MachineryMax offers financing options. It takes seconds to apply and will
-                            help
-                            you
-                            buy
-                            more equipment.</p>
-
-                        <div class="black-cta-button"><a class="orange" href="https://machinerymax.directcapital.com/"
-                                target="_blank">Apply Now </a></div>
-                    </div>
-                </div>
-            </div> -->
 
 
         </div>
@@ -1301,33 +1401,75 @@
             // Start observing the DOM for changes
             observeDOMChanges();
 
-            // async function fetchPosts() {
-            //     try {
-            //         const response = await fetch('https://blog.machinerymax.com/wp-json/wp/v2/posts?per_page=5');
-            //         const posts = await response.json();
-            //         let htmlContent = '';
+            const apiUrl = "https://blog.machinerymax.com/wp-json/wp/v2/posts?categories=41";
+            function truncateText(text, maxLength) {
+                if (text.length <= maxLength) return text;
+                return text.substring(0, maxLength) + '...';
+            }
 
-            //         posts.forEach(post => {
-            //             const tempDiv = document.createElement('div');
-            //             tempDiv.innerHTML = post.excerpt.rendered;
 
-            //             // Strip out all HTML, keeping only the plain text
-            //             const plainTextContent = tempDiv.innerText;
 
-            //             htmlContent += `
-            //   <div class="post">
-            //     <h2>${post.title.rendered}</h2>
-            //     <div>${plainTextContent}</div>
-            //     <a href="${post.link}" target="_blank">Read more</a>
-            //   </div>`;
-            //         });
+            async function fetchAndRenderStories() {
+                try {
+                    const response = await fetch(apiUrl);
+                    if (!response.ok) throw new Error(`Error: ${response.status}`);
 
-            //         console.log(htmlContent)
-            //     } catch (error) {
-            //         console.error('Error fetching posts:', error);
-            //     }
-            // }
+                    const posts = await response.json();
+                    const carouselContainer = document.getElementById('carousel-items');
 
+                    // Generate carousel items for each post
+                    posts.forEach(post => {
+                        const card = document.createElement('div');
+                        card.classList.add('story-card');
+                        card.innerHTML = `
+                <h3 class="story-title">${post.title.rendered}</h3>
+                <div class="story-footer">
+                    <p class="story-description">
+                        ${truncateText(post.excerpt.rendered.replace(/<\/?[^>]+(>|$)/g, ""), 100)}
+                    </p>
+                    <button class="story-button" onclick="window.location.href='${post.link}'">
+                        <span>&rarr;</span>
+                    </button>
+                </div>
+            `;
+                        carouselContainer.appendChild(card);
+                    });
+
+                    // Initialize carousel functionality
+                    let currentIndex = 0;
+                    const itemsPerSlide = 3; // Show 3 items at a time
+                    const totalItems = posts.length;
+
+                    // Function to move carousel
+                    const moveCarousel = (direction) => {
+                        const carouselItems = document.getElementById('carousel-items');
+                        currentIndex += direction;
+
+                        // Ensure currentIndex is within valid bounds
+                        if (currentIndex < 0) currentIndex = 0;
+                        if (currentIndex >= totalItems - itemsPerSlide) currentIndex = totalItems - itemsPerSlide;
+
+                        const offset = -currentIndex * (300 + 15); // Adjust for card width + margin-right
+                        carouselItems.style.transform = `translateX(${offset}px)`;
+                    };
+
+                    // Add event listeners for carousel arrows
+                    document.querySelector('.left-arrow').addEventListener('click', () => moveCarousel(-itemsPerSlide));
+                    document.querySelector('.right-arrow').addEventListener('click', () => moveCarousel(itemsPerSlide));
+
+                    // Ensure initial state is correctly displaying the first 3 items
+                    const carouselItems = document.getElementById('carousel-items');
+                    carouselItems.style.transform = 'translateX(0px)';
+
+                } catch (error) {
+                    console.error("Error fetching posts:", error);
+                }
+            }
+
+
+
+            // Fetch and render posts on page load
+            document.addEventListener("DOMContentLoaded", fetchAndRenderStories);
             // fetchPosts();
         </script><!-- <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script> -->
 </body>
