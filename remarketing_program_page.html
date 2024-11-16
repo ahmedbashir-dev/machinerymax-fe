@@ -609,6 +609,7 @@
             display: flex;
             justify-content: space-between;
             gap: 1rem;
+            align-items: center;
         }
 
         .story-description {
@@ -640,6 +641,13 @@
 
         .story-button:hover {
             background-color: #333;
+            color: white;
+            text-decoration: none;
+        }
+
+        .story-button:visited {
+            color: white;
+            text-decoration: none;
         }
 
         /* Responsive Adjustments */
@@ -1427,9 +1435,10 @@
                     <p class="story-description">
                         ${truncateText(post.excerpt.rendered.replace(/<\/?[^>]+(>|$)/g, ""), 100)}
                     </p>
-                    <button class="story-button" onclick="window.location.href='${post.link}'">
-                        <span>&rarr;</span>
-                    </button>
+                    <a class="story-button" href="${post.link}" target="_blank">
+    <span>&rarr;</span>
+</a>
+
                 </div>
             `;
                         carouselContainer.appendChild(card);
