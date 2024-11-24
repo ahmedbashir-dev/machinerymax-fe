@@ -2,13 +2,13 @@
 
 <head>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel="stylesheet" type="text/css" href="mmbootstrap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="mmbootstrap.css">
     <link rel="stylesheet" type="text/css" href="mmx2.css">
     <link rel="stylesheet" type="text/css" href="custom_common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
     <style type="text/css">
         :root {
             --mx-black: #000000;
@@ -1264,7 +1264,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid transparentBackground">
+    <!-- <div class="container-fluid transparentBackground"> -->
         <div class="row">
             <div class="hero-container">
                 <div class="buy-hero-section">
@@ -1575,7 +1575,7 @@
                     <button id="openModal" class="apply-btn modal-action">Apply Now</button>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
         <script type="text/javascript">
             // Function to remove the 'transparentBackground' class and add 'container-fluid' class
             function removeTransparentBackground(element) {
@@ -1594,9 +1594,13 @@
                 const observer = new MutationObserver(function (mutations) {
                     mutations.forEach(function (mutation) {
                         if (mutation.type === 'childList') {
-                            const headerSplashElement = document.querySelector('div.header-splash');
+                            const headerSplashElement = document.querySelector('header.header-splash');
+                            const headerStyle = document.querySelector(".header--style2.header--style3")
                             if (headerSplashElement) {
                                 removeMarginFromHeaderSplash(headerSplashElement);
+                                removeMarginFromHeaderSplash(headerStyle);
+                                // removeMarginFromHeaderSplash(document.querySelector("header.header-splash"));
+                                document.querySelector(".")
                                 observer.disconnect(); // Stop observing after the change is made
                             }
                         }
