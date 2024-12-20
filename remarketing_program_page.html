@@ -1,0 +1,1805 @@
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- <link rel="stylesheet" type="text/css" href="mmbootstrap.css">
+    <link rel="stylesheet" type="text/css" href="mmx2.css">
+    <link rel="stylesheet" type="text/css" href="custom_common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"> -->
+    <style type="text/css">
+        :root {
+            --mx-black: #000000;
+            --mx-dark-grey: #3E3E3E;
+            --mx-orange: #FF2A01;
+            --mx-yellow: #FFB401;
+            --mx-blue-grey: #303747;
+            --cta-background-black: #171717;
+        }
+
+        /* Finance Hero Section */
+        .hero-container {
+            position: relative;
+        }
+
+        .buy-hero-section {
+            min-height: 80vh;
+            background-image: url("https://blog.machinerymax.com/wp-content/uploads/2024/07/Whole-shop-hero.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            padding-left: 12rem;
+            padding-right: 12rem;
+        }
+
+        .hero-container::before {
+            content: "";
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100% !important;
+            height: 100%;
+            background: linear-gradient(70deg, #FFFFFF 0.51%, rgba(255, 255, 255, 0.9) 40.3%, rgba(255, 255, 255, 0) 95%);
+            z-index: 0;
+            /* mix-blend-mode: hard-light; */
+        }
+
+        .remarketing-tagline {
+            z-index: 1;
+        }
+
+        .remarketing-tagline-h1 {
+            font-size: 48px;
+            font-weight: bolder;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .remarketing-tagline-h1-2 {
+            font-size: 48px;
+            font-weight: bolder;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .remarketing-sub-heading {
+            z-index: 1;
+            color: rgba(62, 62, 62, 1);
+            max-width: 60%;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .remarketing-sub-text {
+            z-index: 1;
+            color: black;
+            max-width: 60%;
+            font-size: 14px;
+        }
+
+        .hero-cta-button {
+            z-index: 1;
+            margin-top: 2rem;
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+
+        .hero-cta-button>a.blue {
+            background: linear-gradient(90deg, #2354B8 0%, #00B1FF 100%);
+            text-transform: uppercase;
+            color: white;
+            width: 17rem;
+            padding: 16px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 767px) {
+            .buy-hero-section {
+                min-height: 70vh;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                justify-content: flex-start;
+                padding-top: 3rem;
+            }
+
+            .hero-container::before {
+                content: "";
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: 100% !important;
+                height: 100%;
+                background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
+                z-index: 0;
+                /* mix-blend-mode: hard-light; */
+            }
+
+            .remarketing-tagline-h1 {
+                font-size: 3.2rem;
+            }
+
+            .remarketing-tagline-h1-2 {
+                font-size: 3.2rem;
+            }
+
+            .remarketing-sub-text {
+                font-size: 12px;
+                max-width: 100%;
+            }
+
+            .remarketing-sub-heading {
+                max-width: 100%;
+                font-size: 12px;
+                padding-left: unset;
+                padding-right: unset;
+            }
+        }
+
+        @media (max-width: 991px) and (min-width: 768px) {
+            .buy-hero-section {
+                min-height: 90vh;
+            }
+
+            .hero-container::before {
+                content: "";
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: 100% !important;
+                height: 100%;
+                background: linear-gradient(70deg, #FFFFFF 0.51%, rgba(255, 255, 255, 0.9) 40.3%, rgba(255, 255, 255, 0) 95%);
+                z-index: 0;
+                /* mix-blend-mode: hard-light; */
+            }
+
+            .remarketing-sub-heading {
+                max-width: 100%;
+                font-size: 14px;
+            }
+
+            .remarketing-sub-text {
+                max-width: 100%;
+            }
+        }
+
+        /* Hero Section End */
+        /* Our services at a glance */
+        .our-services-container {
+            padding-left: 11rem;
+            padding-right: 11rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .our-services-line-1 {
+            font-weight: 600;
+            margin-bottom: 0px;
+            /* margin-top: 0px; */
+        }
+
+        .our-services-line-2 {
+            font-weight: 600;
+            margin-bottom: 0px;
+            margin-top: 5px;
+        }
+
+        .our-services-heading {
+            font-size: 2rem;
+            margin: 5px 0px 5px 0px;
+            font-weight: 600;
+        }
+
+        .our-services-description {
+            font-size: 12px;
+        }
+
+        @media (max-width: 767px) {
+            .our-services-container {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            .our-services-line-1 {
+                margin-top: 0px;
+                font-size: 3rem;
+            }
+
+            .our-services-line-2 {
+                margin-bottom: 10px;
+                font-size: 3rem;
+            }
+
+            .our-services-description {
+                font-size: 14px;
+            }
+        }
+
+        /* END our services at a glance */
+        /* Our Solution section */
+        .our-solution-container {
+            padding-left: 11rem;
+            padding-right: 11rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            background-color: #212429;
+            color: white;
+            line-height: 1;
+            /* Avoid any line-height-induced gaps */
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            /* For pseudo-element */
+        }
+
+        .our-solution-container-header {
+            padding-left: 11rem;
+            padding-right: 11rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            background-color: #212429;
+            color: white;
+            line-height: 1;
+            /* Avoid any line-height-induced gaps */
+            box-sizing: border-box;
+            position: relative;
+
+            /* For pseudo-element */
+        }
+
+        .bg-black {
+            background-color: #212429;
+        }
+
+        .our-solution-card {
+            background-color: #1E1E21;
+            border-radius: 0.5rem;
+            /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            min-height: 150px;
+        }
+
+        .our-solution-card-heading {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: unset;
+            margin-bottom: unset;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .our-solution-card-text {
+            font-size: 1.2rem;
+            color: #929292;
+            text-align: center;
+        }
+
+        .our-solution-section-heading {
+            font-weight: 600;
+        }
+
+        .our-solution-section-subheading {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        @media (max-width: 767px) {
+            .our-solution-container {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                line-height: 1;
+                /* Avoid any line-height-induced gaps */
+                box-sizing: border-box;
+                position: relative;
+                flex-direction: column;
+                /* For pseudo-element */
+            }
+
+            .our-solution-container-header {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                line-height: 1;
+                /* Avoid any line-height-induced gaps */
+                box-sizing: border-box;
+                position: relative;
+                /* flex-direction: column; */
+                /* For pseudo-element */
+            }
+
+            .our-solution-section-heading {
+                text-align: left;
+                font-size: 2.5rem;
+            }
+
+            .our-solution-card {
+                margin-top: 10px;
+            }
+
+            .our-solution-section-subheading {
+                text-align: left;
+            }
+        }
+
+        /* how it works section start */
+        .how-it-works-section {
+            padding-top: 3rem;
+            padding-bottom: 8rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(48, 55, 71, 1);
+        }
+
+        .how-it-works-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .how-it-works-section-heading {
+            color: white;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        /* General card styling */
+        .mx-card {
+            display: flex;
+            align-items: center;
+            background-color: #2C3340;
+            /* Dark background color similar to the screenshot */
+            border-radius: 8px;
+            padding: 1.5rem 1rem 1.5rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            /* Subtle border with transparency */
+            color: #FFFFFF;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+
+        /* Circle with the number */
+        .mx-card-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #FFFFFF;
+            /* White background for the circle */
+            color: #000000;
+            /* Black text for contrast */
+            font-weight: bold;
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        /* Content styling */
+        .mx-card-content {
+            flex: 1;
+        }
+
+        .mx-card-title {
+            margin: 0 0 0.5rem 0;
+            text-align: left;
+            font-size: 1.75rem;
+            font-weight: bold;
+        }
+
+        .mx-card-description {
+            text-align: left;
+            color: #b0b3b8;
+            font-size: 12px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .mx-card {
+                /* flex-direction: column; */
+                text-align: center;
+                /* padding: 1rem; */
+            }
+
+            .mx-card-circle {
+                margin-right: 1rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .how-it-works-row {
+                flex-direction: column;
+            }
+        }
+
+        /* video section end */
+        /* Success stories */
+        /* Success Stories Section */
+        .success-stories {
+            display: flex;
+            /* Use Flexbox for equal height */
+            align-items: stretch;
+            /* Stretch items to the same height */
+            padding-left: 5rem;
+            padding-right: 5rem;
+            text-align: center;
+            color: #333;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .success-stories .col-sm-4,
+        .success-stories .col-sm-5 {
+            display: flex;
+            /* Flexbox within columns */
+            flex-direction: column;
+            /* Align content vertically */
+            justify-content: center;
+            /* max-width: 50%; */
+        }
+
+        .success-stories>.col-sm-5 {
+            padding-top: 5rem;
+            color: #585A5C;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            /* Adjust title size */
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            /* Adjust paragraph size */
+            text-align: left;
+        }
+
+        @media (max-width: 767px) {
+            .success-stories {
+                display: block;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            .success-stories .col-sm-4,
+            .success-stories .col-sm-5 {
+                padding: 10px;
+                /* Reduce padding for smaller screens */
+            }
+        }
+
+        /* Story Card Styling */
+        .dynamic-content {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-bottom: 3rem;
+            display: flex;
+            gap: 15px;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            /* Max width for large screens */
+            overflow: hidden;
+            /* Hide overflow for carousel sliding effect */
+            display: flex;
+        }
+
+        .carousel-items {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 100%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .story-card {
+            flex-shrink: 0;
+            /* Prevent shrinking */
+            width: 300px;
+            /* Fixed width */
+            background-color: #fff;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 5px;
+            padding: 20px;
+            margin-right: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+
+        .arrows {
+            padding-right: 15rem;
+            gap: 1rem;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .carousel-arrow {
+            /* transform: translateY(-50%); */
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            /* padding: 20px; */
+            cursor: pointer;
+            height: 40px;
+            width: 40px;
+            border: none;
+            border-radius: 10%;
+            z-index: 2;
+            font-size: 18px;
+        }
+
+        .story-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            /* margin-bottom: 0.5rem; */
+        }
+
+        .story-footer {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .story-description {
+            color: #666;
+            flex: 1;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Story Button */
+        .story-button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            /* position: absolute; */
+            bottom: 1.5rem;
+            right: 1.5rem;
+            transition: background-color 0.3s;
+            margin-left: auto;
+        }
+
+        .story-button:hover {
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+        }
+
+        .story-button:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 767px) {
+            .carousel-items {
+                display: flex;
+                width: 100%;
+                /* Ensure carousel takes up the full width */
+            }
+
+            .dynamic-content{
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+
+            .story-card {
+                width: 100%;
+                /* Full width for each card on mobile */
+                margin-right: 0;
+                /* Remove margin between cards */
+            }
+
+            .arrows {
+                justify-content: flex-end;
+                padding-right: 3rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .section-subtitle {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+
+        /* Testimoanial section */
+        /* Testimonial Container */
+        .testimonial-section {
+            padding-top: 3rem;
+            padding-bottom: 8rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: #212429;
+        }
+
+        .testimonial-container {
+            position: relative;
+            margin-left: 2%;
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            /* background-color: white; */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #EEEEEE;
+
+
+        }
+
+        .center-child {
+
+            padding: 1rem;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .testimonial-text-wrapper {
+            /* height: 100px; */
+            overflow: hidden;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #3E3E3E;
+            margin-bottom: 20px;
+            animation-name: slideIn;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .testimonial-author,
+        .testimonial-author-company,
+        .testimonial-author-location {
+            font-weight: bold;
+            color: #FF5E14;
+            animation-name: slideIn;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+
+
+        }
+
+        .chevron {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 60px;
+            color: #FF5E14;
+            cursor: pointer;
+
+        }
+
+        .chevron-left {
+            left: 10px;
+        }
+
+        .chevron-right {
+            right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-container {
+                width: 100%;
+                margin: 0px 0px 1em 0px;
+            }
+
+            .testimonial-text {
+                font-size: 16px;
+            }
+        }
+
+        .black-cta-button>a.orange {
+            background: linear-gradient(90deg, #FF2A01 0%, #FFB401 100%);
+            text-transform: uppercase;
+            color: white;
+            width: 17rem;
+            padding: 16px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .black-cta-button>a.blue {
+            background: linear-gradient(90deg, #2354B8 0%, #00B1FF 100%);
+            text-transform: uppercase;
+            color: white;
+            width: 17rem;
+            padding: 16px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .key-features {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            background: linear-gradient(90deg, #2354B8 0%, #00B1FF 100%);
+            padding-left: 7rem;
+            padding-right: 7rem;
+        }
+
+        .icon-heading {
+            display: flex;
+            align-items: center;
+        }
+
+        .key-features-heading {
+            font-size: 38px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .cards-container {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .feature-card {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background-color: white;
+            border-radius: 1rem;
+            height: 15rem;
+        }
+
+        .feature-card h2 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .feature-card p {
+            padding-left: 1rem;
+        }
+
+        .key-features-text {
+            padding-left: 5rem;
+            padding-right: 5rem;
+            max-width: 80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .key-features-cta {
+            padding: 3rem 0rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .key-features-cta>a.orange {
+            background: linear-gradient(90deg, #FF2A01 0%, #FFB401 100%);
+            /* margin: 0 auto; */
+            /* display: inline-block; */
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+            width: 16rem;
+            padding: 16px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .key-features {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                padding-left: 3rem !important;
+                padding-right: 3rem !important;
+            }
+
+            .cards-container {
+                flex-direction: column;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                gap: 1.5rem;
+            }
+
+            .feature-card {
+                height: auto;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+
+            .feature-card h2 {
+                font-size: 18px;
+            }
+
+            .key-features-text {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                max-width: 100%;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+
+        .why-mm {
+            padding: 5rem 7rem;
+        }
+
+        .why-mm-cards-container {
+            padding: 3rem 0rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .why-mm-card {
+            background-color: rgba(250, 250, 250, 1);
+            border-radius: 1rem;
+            padding: 0.5rem 1rem;
+        }
+
+        .why-mm-card h2 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .why-mm {
+                padding: 3rem 2rem;
+            }
+
+            .why-mm-cards-container {
+                flex-direction: column;
+                padding: 2rem 0rem;
+                gap: 1.5rem;
+            }
+
+            .why-mm-card {
+                padding: 1rem;
+            }
+
+            .why-mm-card h2 {
+                font-size: 16px;
+            }
+
+            .row-pad {
+                padding-left: 0rem;
+                padding-right: 0rem;
+            }
+        }
+
+        @media (min-width: 992px) {
+
+            /* Adjust the min-width as needed for your definition of 'large' */
+            .row-pad {
+                padding-left: 12rem !important;
+                padding-right: 12rem !important;
+            }
+        }
+
+        .partner-section {
+            background-color: var(--mx-blue-grey);
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .partner-content {
+            background: #2354B8;
+            color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .partner-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .partner-content p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .partner-content a {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .partner-content a:hover {
+            text-decoration: underline;
+        }
+
+        .apply-btn {
+            background: linear-gradient(90deg, #FF2A01 0%, #FFB401 100%);
+            color: #fff;
+            border: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .apply-btn:hover {
+            background-color: #e06b3a;
+        }
+
+        @media (max-width: 768px) {
+            .partner-content h2 {
+                font-size: 2rem;
+            }
+
+            .partner-content p {
+                font-size: 1.5rem;
+            }
+        }
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1000;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Black w/ opacity */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            border: 1px solid #888;
+            padding: 20px;
+            width: auto;
+            /* Width based on content */
+            max-width: 100%;
+            /* Use 90% of the viewport width */
+            margin: auto;
+            /* Center horizontally */
+            position: absolute;
+            top: 50%;
+            /* Center vertically */
+            left: 50%;
+            /* Center horizontally */
+            transform: translate(-50%, -50%);
+            height: auto;
+            max-height: 90%;
+            /* Limit the height of the modal content */
+        }
+
+        .mx-modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 20px;
+        }
+
+        .mx-modal-header h2 {
+            font-size: 22px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .modal-content {
+                max-width: 95%;
+                /* Allow more width on smaller screens */
+                padding: 15px;
+                /* Reduce padding for smaller screens */
+            }
+
+            .mx-modal-header h2 {
+                font-size: 20px;
+                /* Slightly smaller header font on mobile */
+            }
+
+            .close {
+                font-size: 24px;
+                /* Smaller close button */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="mx-modal-header">
+                <h2>Partner with MachineryMax</h2>
+                <span class="close" id="closeModal">&times;</span>
+            </div>
+            <!-- Note: Modified for consistent styling -->
+            <div id="crmWebToEntityForm" class="crmWebToEntityForm styled-form">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+                <style>
+                    body,
+                    html {
+                        margin: 0;
+                        padding: 0;
+                        font-family: Arial, sans-serif;
+                        background-color: #f9f9f9;
+                        color: #323232;
+                    }
+
+                    .styled-form {
+                        /* max-width: 600px; */
+                        /* margin: 30px auto; */
+                        padding: 25px;
+                        /* background-color: white; */
+                        /* border-radius: 8px; */
+                        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+                    }
+
+                    .styled-form .zcwf_row {
+                        /* display: flex; */
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 15px;
+                        flex: 1;
+                    }
+
+                    .styled-form .zcwf_col_lab {
+                        flex: 1;
+                        font-size: 12px;
+                        color: black;
+                        font-weight: 600;
+                    }
+
+                    .styled-form .zcwf_col_fld input,
+                    .styled-form .zcwf_col_fld textarea,
+                    .styled-form .zcwf_col_fld select {
+                        flex: 1;
+                        padding: 8px;
+                        font-size: 14px;
+                        color: #333;
+                        border: 1px solid #d9e8ec;
+                        border-radius: 4px;
+                        width: 100%;
+                    }
+
+                    .styled-form .zcwf_col_fld textarea {
+                        resize: vertical;
+                        min-height: 80px;
+                    }
+
+                    .zcwf_col_fld {
+                        flex: 1 !important;
+                    }
+
+                    .name_row {
+                        display: flex;
+                        justify-content: space-between;
+                        flex: 1;
+                        gap: 1rem;
+                    }
+
+                    .styled-form .zcwf_button {
+                        font-size: 12px;
+                        color: white !important;
+                        font-weight: 400;
+                        border: 1px solid #c0c6cc;
+                        background: linear-gradient(90deg, #FF2A01 0%, #FFB401 100%);
+                        border: none;
+                        padding: 6px 12px;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        max-width: 120px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    .styled-form .zcwf_button:hover {
+                        background-color: #003bb5;
+                    }
+
+                    .styled-form .zcwf_button:disabled {
+                        background-color: #ccc;
+                        cursor: not-allowed;
+                    }
+
+                    .styled-form .g-recaptcha {
+                        margin-top: 10px;
+                    }
+
+                    @media (max-width: 600px) {
+                        .styled-form {
+                            padding: 15px;
+                        }
+
+                        .styled-form .zcwf_row {
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+
+                        .styled-form .zcwf_col_lab,
+                        .styled-form .zcwf_col_fld {
+                            width: 100%;
+                        }
+
+                        .styled-form .zcwf_col_fld {
+                            margin-top: 5px;
+                        }
+                    }
+                </style>
+                <form id="webform2870180000102089001" name="WebToLeads2870180000102089001" accept-charset="UTF-8"
+                    onsubmit="return checkMandatory2870180000102089001();">
+                    <input type="hidden" name="xnQsjsdp"
+                        value="d732682300ccdfbd6fdcf41625fd8327edf7e233527fc8605487a37541610639">
+                    <input type="hidden" name="zc_gad" id="zc_gad" value="">
+                    <input type="hidden" name="xmIwtLD"
+                        value="0913d67130ae2fa6b730b4add06f4e1ddfc6fc8b57a34b365b831b9444a23f89fb15201f838296e05a01c5f31e6003b3">
+                    <input type="hidden" name="actionType" value="TGVhZHM=">
+                    <input type="hidden" name="returnURL" value="null">
+                    <div class="name_row">
+                        <div class="zcwf_row">
+                            <label class="zcwf_col_lab" for="First_Name">First Name<span
+                                    style="color:red;">*</span></label>
+                            <div class="zcwf_col_fld"><input class="form-control" type="text" id="First_Name"
+                                    name="First Name" maxlength="40" required></div>
+                        </div>
+                        <div class="zcwf_row">
+                            <label class="zcwf_col_lab" for="Last_Name">Last Name<span
+                                    style="color:red;">*</span></label>
+                            <div class="zcwf_col_fld"><input class="form-control" type="text" id="Last_Name"
+                                    name="Last Name" maxlength="80" required></div>
+                        </div>
+                    </div>
+                    <div class="name_row">
+                        <div class="zcwf_row">
+                            <label class="zcwf_col_lab" for="Company">Company<span style="color:red;">*</span></label>
+                            <div class="zcwf_col_fld"><input class="form-control" type="text" id="Company"
+                                    name="Company" maxlength="200" required></div>
+                        </div>
+                        <div class="zcwf_row">
+                            <label class="zcwf_col_lab" for="Mobile">Mobile Number<span
+                                    style="color:red;">*</span></label>
+                            <div class="zcwf_col_fld"><input class="form-control" type="text" id="Mobile" name="Mobile"
+                                    maxlength="30" required></div>
+                        </div>
+                    </div>
+                    <div class="zcwf_row">
+                        <label class="zcwf_col_lab" for="Email">Email<span style="color:red;">*</span></label>
+                        <div class="zcwf_col_fld"><input class="form-control" type="email" id="Email" name="Email"
+                                maxlength="100" required></div>
+                    </div>
+                    <div class="zcwf_row">
+                        <label class="zcwf_col_lab" for="LEADCF15">Message<span style="color:red;">*</span></label>
+                        <div class="zcwf_col_fld"><textarea class="form-control" id="LEADCF15" name="LEADCF15"
+                                required></textarea></div>
+                    </div>
+                    <div class="zcwf_row">
+                        <div class="zcwf_col_fld">
+                            <div class="g-recaptcha" data-sitekey="6Lf3ri8qAAAAAEHaGGLIXSGSVAyJnbE_ikbPQNGZ"
+                                data-theme="light"></div>
+                        </div>
+                    </div>
+                    <div class="zcwf_row">
+                        <div class="zcwf_col_fld">
+                            <input type="submit" class="zcwf_button" value="Submit">
+                            <!-- <input type="reset" class="zcwf_button" value="Reset"> -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-fluid transparentBackground"> -->
+        <div class="row">
+            <div class="hero-container">
+                <div class="buy-hero-section">
+                    <div class="remarketing-tagline">
+                        <div class="remarketing-tagline-1">
+                            <h1 class="remarketing-tagline-h1">Unlock Growth </h1>
+                        </div>
+                        <div class="remarketing-tagline-2 ">
+                            <h1 class="remarketing-tagline-h1-2">Through Strategic Partnership</h1>
+                            <!-- <h1 class="remarketing-tagline-h1-2"></h1> -->
+                        </div>
+                    </div>
+                    <div class="remarketing-sub-heading"><span>Let MachineryMax be your strategic equipment remarketing
+                            partner.</span>
+                    </div>
+                    <div class="remarketing-sub-text">
+                        <span>As the leading marketplace and auction platform in the heavy machinery sector,
+                            MachineryMax is dedicated to maximizing your returns through expert remarketing solutions.
+                            We specialize in customer trade-ins, equipment resale, inventory liquidation, and complete
+                            shop closures.</span>
+                    </div>
+                    <div class="hero-cta-button"><a id="openModal" class="blue modal-action">Apply Now </a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row our-services-container ">
+            <div class="col-sm-3">
+                <h2 class="our-services-line-1">Our Services</h2>
+                <h2 class="our-services-line-2">at a Glance</h2>
+            </div>
+            <div class="col-sm-3">
+                <svg width="66.67" height="66" viewBox="0 0 100 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.225586" y="0.0719299" width="98.878" height="98.878" rx="49.439" fill="#FAFAFA" />
+                    <g clip-path="url(#clip0_716_785)">
+                        <path
+                            d="M52.5216 24.1817L32.0865 39.8818L36.8233 46.039L38.6041 44.6711V47.9985C36.2783 51.666 36.4666 56.4807 39.1699 59.9619L37.7125 61.4192L35.8971 59.6038L27.5313 67.9696C26.7963 68.7045 26.3916 69.6817 26.3916 70.7211C26.3916 71.7605 26.7964 72.7376 27.5312 73.4724L27.7609 73.702C28.5195 74.4606 29.5159 74.8398 30.5124 74.8398C31.5088 74.8398 32.5052 74.4605 33.2637 73.702L41.6295 65.3362L39.8069 63.5136L41.2988 62.0217C43.0638 63.3033 45.1805 63.9957 47.4037 63.9957C50.1866 63.9957 52.803 62.9119 54.7707 60.9441C55.5463 60.1685 56.1733 59.2999 56.6527 58.3742H66.4383V44.6849L68.2001 46.0398L72.9368 39.8824L52.5216 24.1817ZM31.1692 71.6077C30.807 71.9698 30.2176 71.9698 29.8554 71.6076L29.6259 71.378C29.4505 71.2026 29.3538 70.9693 29.3538 70.7212C29.3538 70.473 29.4505 70.2397 29.6259 70.0643L35.8972 63.793L37.4406 65.3364L31.1692 71.6077ZM52.6761 58.85C51.2678 60.2582 49.3953 61.0339 47.4037 61.0339C45.4121 61.0339 43.5396 60.2583 42.1312 58.85C39.224 55.9427 39.224 51.2122 42.1312 48.305C43.5849 46.8513 45.4943 46.1246 47.4037 46.1246C49.3131 46.1246 51.2226 46.8514 52.6761 48.305C55.5833 51.2122 55.5833 55.9426 52.6761 58.85ZM63.4761 55.4123H57.6551C58.2303 52.1717 57.2694 48.7092 54.7706 46.2104C51.1858 42.6256 45.6173 42.205 41.5662 44.9474V42.409L52.5207 33.9819L63.476 42.409V55.4123H63.4761ZM67.6581 41.8862L53.4793 30.9823L52.5207 30.2449L51.038 31.3855L37.3662 41.8869L36.2416 40.425L52.5207 27.9178L68.7826 40.4244L67.6581 41.8862Z"
+                            fill="#2354B8" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_716_785">
+                            <rect width="50.6583" height="50.6583" fill="white" transform="translate(24.335 24.1817)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <h3 class="our-services-heading">Appraisals & Valuations</h3>
+                <p class="our-services-description">
+                    We accurately price your equipment to attract competitive offers, ensuring swift sales and optimal
+                    returns.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <svg width="66" height="66" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.209961" y="0.0719299" width="88.3212" height="88.3212" rx="44.1606" fill="#FAFAFA" />
+                    <g clip-path="url(#clip0_716_795)">
+                        <path
+                            d="M63.9336 34.2017V25.3963H57.7136L57.2995 25.7916C53.0962 29.8042 47.7615 31.7201 44.0265 32.6207C41.5855 33.2093 39.4866 33.4543 38.1788 33.5561V32.1727H25.1288V35.0115H19.9854V44.727H25.1288V47.5657H27.6127L31.2005 63.0723H39.5949L36.0071 47.5657H38.1788V46.1824C39.4869 46.2843 41.5857 46.5292 44.0265 47.1178C47.7615 48.0184 53.0961 49.9342 57.2995 53.9469L57.7136 54.3422H63.9336V45.5368H68.7554V34.2017H63.9336ZM25.1288 41.8695H22.843V37.8692H25.1288V41.8695ZM27.9864 35.0303H35.3212V44.7082H27.9864V35.0303ZM33.4725 60.2148L30.5459 47.5658H33.074L36.0007 60.2148H33.4725ZM56.1342 49.3241C52.1583 46.5584 47.8403 45.0911 44.6166 44.3207C41.8836 43.6676 39.5753 43.4137 38.1788 43.315V36.4236C39.5753 36.3249 41.8836 36.0711 44.6166 35.4178C47.8403 34.6474 52.1583 33.1802 56.1342 30.4144V49.3241ZM61.076 34.2016V45.5368V51.4847H58.9918V28.2539H61.076V34.2016ZM65.8977 42.6793H63.9336V37.0593H65.8977V42.6793Z"
+                            fill="#2354B8" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_716_795">
+                            <rect width="48.77" height="48.77" fill="white" transform="translate(19.9854 19.8475)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <h3 class="our-services-heading">Marketing & Sales</h3>
+                <p class="our-services-description">
+                    Connect directly with qualified buyers through targeted marketing strategies designed to maximize
+                    visibility and revenue.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <svg width="66" height="66" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.283203" y="0.0719299" width="88.3207" height="88.3207" rx="44.1604" fill="#FAFAFA" />
+                    <g clip-path="url(#clip0_716_804)">
+                        <path
+                            d="M62.8591 35.2316H52.6485V29.9451H20.0586V54.9481H24.1402C24.7567 57.011 26.6709 58.5196 28.9316 58.5196C31.1923 58.5196 33.1065 57.011 33.723 54.9481H35.1339C35.7504 57.011 37.6646 58.5196 39.9254 58.5196C42.1861 58.5196 44.1004 57.011 44.7168 54.9481H54.5181C55.1346 57.011 57.0488 58.5196 59.3096 58.5196C61.5703 58.5196 63.4845 57.011 64.101 54.9481H68.8281V41.9002L62.8591 35.2316ZM57.357 38.0893H61.5818L65.7404 42.7352H57.357V38.0893ZM52.6485 38.0893H54.4994V42.7352H52.6485V38.0893ZM28.9316 55.6621C27.75 55.6621 26.7886 54.7007 26.7886 53.5191C26.7886 52.3375 27.75 51.3761 28.9316 51.3761C30.1132 51.3761 31.0746 52.3375 31.0746 53.5191C31.0746 54.7007 30.1132 55.6621 28.9316 55.6621ZM39.9253 55.6621C38.7436 55.6621 37.7822 54.7007 37.7822 53.5191C37.7822 52.3375 38.7436 51.3761 39.9253 51.3761C41.1069 51.3761 42.0683 52.3375 42.0683 53.5191C42.0683 54.7007 41.107 55.6621 39.9253 55.6621ZM49.7909 52.0907H44.7169C44.1006 50.0274 42.1863 48.5186 39.9253 48.5186C37.6643 48.5186 35.75 50.0274 35.1337 52.0907H33.7231C33.1068 50.0274 31.1925 48.5186 28.9315 48.5186C26.6705 48.5186 24.7562 50.0274 24.1399 52.0907H22.9162V32.8029H49.7909V52.0907ZM59.3095 55.6621C58.1278 55.6621 57.1664 54.7007 57.1664 53.5191C57.1664 52.3375 58.1278 51.3761 59.3095 51.3761C60.4911 51.3761 61.4525 52.3375 61.4525 53.5191C61.4525 54.7007 60.4912 55.6621 59.3095 55.6621ZM65.9705 52.0907H64.1011C63.4848 50.0274 61.5705 48.5186 59.3095 48.5186C57.0485 48.5186 55.1342 50.0274 54.5179 52.0907H52.6485V45.5928H65.9705V52.0907Z"
+                            fill="#2354B8" />
+                        <path d="M29.742 35.2314H25.3604V38.089H29.742V35.2314Z" fill="#2354B8" />
+                        <path d="M29.742 39.5599H25.3604V42.4175H29.742V39.5599Z" fill="#2354B8" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_716_804">
+                            <rect width="48.7695" height="48.7695" fill="white"
+                                transform="translate(20.0586 19.8475)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <h3 class="our-services-heading">Logistical Coordination</h3>
+                <p class="our-services-description">
+                    From pick-up to final sale, we manage all aspects of the process, allowing you to focus on core
+                    operations without distraction.
+                </p>
+            </div>
+        </div>
+        <div class="row our-solution-container-header">
+            <div class="col-sm-6 text-center col-sm-offset-3">
+                <h2 class="our-solution-section-heading">
+                    Our Solution: Comprehensive Resale Management
+                </h2>
+                <div class="our-solution-section-subheading">
+                    <p>MachineryMax is an extension of your business, turning potential equipment and logistical
+                        burdens
+                        into profitable opportunities. We offer:
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row our-solution-container">
+            <!-- <div class="col-sm-1 bg-black"></div> -->
+            <div class="col-sm-3 our-solution-card">
+                <h3 class="our-solution-card-heading">Quarterly/Annual Inventory Sales</h3>
+                <p class="our-solution-card-text">
+                    Liquidate excess inventory, including scratch-and-dent items, to reduce storage costs and free
+                    up
+                    capital.
+                </p>
+            </div>
+            <!-- <div class="col-sm-1 bg-black"></div> -->
+            <div class="col-sm-3 our-solution-card">
+                <h3 class="our-solution-card-heading">Market Expansion</h3>
+                <p class="our-solution-card-text">
+                    Leverage our extensive network for broader reach and faster sales.
+                </p>
+            </div>
+            <!-- <div class="col-sm-1 bg-black"></div> -->
+            <div class="col-sm-3 our-solution-card">
+                <h3 class="our-solution-card-heading">White-Glove Service</h3>
+                <p class="our-solution-card-text">
+                    Handle every aspect of the process, from appraisal and marketing to closing sales and managing
+                    logistics, ensuring a seamless experience.
+                </p>
+            </div>
+        </div>
+        <div class="row our-solution-container">
+            <!-- <div class="col-sm-1 bg-black"></div> -->
+            <div class="col-sm-3 our-solution-card">
+                <h3 class="our-solution-card-heading">Customer Satisfaction</h3>
+                <p class="our-solution-card-text">
+                    Offer hassle-free trade-ins that enhance your brand’s reputation.
+                </p>
+            </div>
+            <!-- <div class="col-sm-1 bg-black"></div> -->
+            <div class="col-sm-3 our-solution-card">
+                <h3 class="our-solution-card-heading">Operational Efficiency</h3>
+                <p class="our-solution-card-text">
+                    Focus on core activities while we handle the complexities of equipment resale.
+                </p>
+            </div>
+            <!-- <div class="col-sm-1 bg-black"></div> -->
+            <div class="col-sm-3 our-solution-card">
+                <h3 class="our-solution-card-heading">Data-Driven Insights</h3>
+                <p class="our-solution-card-text">
+                    Gain buyer behavior insights and bidding trends to refine strategies and boost sales performance
+                    (available for an additional cost).
+                </p>
+            </div>
+        </div>
+        <div class="row bg-black our-solution-container">
+            <div class="col-sm-12 text-center" style="padding-top: 2rem;padding-bottom: 2rem;">
+                <div class="black-cta-button"><a class="orange modal-action" id="openModal">Apply Now </a></div>
+            </div>
+        </div>
+        <div class="row  how-it-works-section">
+            <div class="col-sm-12">
+                <h2 class="text-center how-it-works-section-heading">
+                    How it works
+                </h2>
+            </div>
+            <div class="col-sm-10 text-center">
+                <div class="row how-it-works-row">
+                    <div class="col-sm-5 ">
+                        <div class="mx-card">
+                            <div class="mx-card-circle">01</div>
+                            <div class="mx-card-content">
+                                <h3 class="mx-card-title">Customer Trade-In</h3>
+                                <p class="mx-card-description">Your customer upgrades their equipment, trading in their
+                                    old equipment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 ">
+                        <div class="mx-card">
+                            <div class="mx-card-circle">02</div>
+                            <div class="mx-card-content">
+                                <h3 class="mx-card-title">MachineryMax Engagement</h3>
+                                <p class="mx-card-description">We appraise and prepare the equipment for sale.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row how-it-works-row">
+                    <div class="col-sm-5 ">
+                        <div class="mx-card">
+                            <div class="mx-card-circle">03</div>
+                            <div class="mx-card-content">
+                                <h3 class="mx-card-title">Remarketing and Sale</h3>
+                                <p class="mx-card-description">The equipment is sold via our best-in-class auction and
+                                    marketplace platform, securing the best returns.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 ">
+                        <div class="mx-card">
+                            <div class="mx-card-circle">04</div>
+                            <div class="mx-card-content">
+                                <h3 class="mx-card-title">Efficient Equipment Transfer</h3>
+                                <p class="mx-card-description">We assist buyers with arranging transportation
+                                    facilitating quick and seamless transfers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row success-stories">
+            <div class="col-sm-4 ">
+                <h2 class="section-title">Success Stories</h2>
+            </div>
+            <div class="col-sm-5 col-sm-offset-2 ">
+                <p class="section-subtitle">
+                    Discover how MachineryMax has helped businesses achieve remarkable results with our
+                    comprehensive
+                    equipment remarketing solutions.
+                </p>
+            </div>
+        </div>
+        <div class="arrows">
+            <button class="carousel-arrow left-arrow">&#8592;</button>
+            <button class="carousel-arrow right-arrow">&#8594;</button>
+        </div>
+        <div class="row dynamic-content">
+            <div class="carousel-wrapper">
+                <div id="carousel-items" class="carousel-items">
+                    <!-- Carousel items dynamically injected here -->
+                </div>
+            </div>
+        </div>
+        <div class="row  testimonial-section">
+            <div class="col-sm-12">
+                <h2 class="text-center how-it-works-section-heading">
+                    Testimonials
+                </h2>
+            </div>
+            <div class="col-sm-10 text-center">
+
+                <div class="row center-child">
+                    <div class="col-sm-8 testimonial-container">
+
+                        <div class="testimonial-text-wrapper">
+                            <div class="testimonial-text">
+
+                            </div>
+                            <div class="testimonial-author">
+
+                            </div>
+                            <div class="testimonial-author-company">
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="chevron chevron-left">&#8249;</div>
+                        <div class="chevron chevron-right">&#8250;</div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-6">
+                        <div class="testimonial-container">
+                            <div class="testimonial-card">
+                                <h4 class="testimonial-author">Mark Craig</h4>
+                                <p class="testimonial-position">Vice President, SCM Group NA</p>
+                                <p class="testimonial-text">
+                                    “Our partnership with MachineryMax has streamlined our operations and enhanced our
+                                    customer relations by
+                                    enabling us to accept trade-ins and generate an additional revenue stream by selling
+                                    used equipment.”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="testimonial-container">
+                            <div class="testimonial-card">
+                                <h4 class="testimonial-author">Jordan Hawkins</h4>
+                                <p class="testimonial-position">Product Manager, Weinig USA</p>
+                                <p class="testimonial-text">
+                                    “MachineryMax has been instrumental in helping us efficiently manage excess
+                                    inventory and improve our bottom line through targeted, profitable sales.”
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+
+            </div>
+        </div>
+        <div class="partner-section row">
+            <div class="col-sm-10">
+                <div class="partner-content">
+                    <h2>Partner with us today to enhance your customer offerings and drive new sales</h2>
+                    <p>Visit us at <a href="https://www.machinerymax.com" target="_blank">www.machinerymax.com</a>
+                        or contact us at <a href="mailto:sales@machinerymax.com">sales@machinerymax.com</a> |
+                        <a href="tel:866-988-4667"> 866-988-4667</a>
+                    </p>
+                    <button id="openModal" class="apply-btn modal-action">Apply Now</button>
+                </div>
+            </div>
+        <!-- </div> -->
+        <script type="text/javascript">
+            // Function to remove the 'transparentBackground' class and add 'container-fluid' class
+            function removeTransparentBackground(element) {
+                element.classList.remove('container');
+                element.classList.add('container-fluid');
+            }
+
+            function removeMarginFromHeaderSplash(element) {
+                element.style.marginBottom = '0px';
+            }
+
+            function observeHeaderSplashChanges() {
+                const targetNode = document.body;
+                const config = { childList: true, subtree: true };
+
+                const observer = new MutationObserver(function (mutations) {
+                    mutations.forEach(function (mutation) {
+                        if (mutation.type === 'childList') {
+                            const headerSplashElement = document.querySelector('header.header-splash');
+                            const headerStyle = document.querySelector(".header--style2.header--style3")
+                            if (headerSplashElement) {
+                                removeMarginFromHeaderSplash(headerSplashElement);
+                                removeMarginFromHeaderSplash(headerStyle);
+                                // removeMarginFromHeaderSplash(document.querySelector("header.header-splash"));
+                                document.querySelector(".")
+                                observer.disconnect(); // Stop observing after the change is made
+                            }
+                        }
+                    });
+                });
+
+                observer.observe(targetNode, config);
+            }
+
+            // Function to observe changes to the DOM
+            function observeDOMChanges() {
+                const targetNode = document.body;
+                const config = { childList: true, subtree: true };
+
+                const observer = new MutationObserver(function (mutations) {
+                    mutations.forEach(function (mutation) {
+                        if (mutation.type === 'childList') {
+                            const containerElement = document.querySelector('main>div.container');
+                            if (containerElement) {
+                                removeTransparentBackground(containerElement);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+
+                observer.observe(targetNode, config);
+            }
+
+            // Start observing the DOM for changes
+            observeDOMChanges();
+            observeHeaderSplashChanges();
+
+            const apiUrl = "https://blog.machinerymax.com/wp-json/wp/v2/posts?categories=41";
+            function truncateText(text, maxLength) {
+                if (text.length <= maxLength) return text;
+                return text.substring(0, maxLength) + '...';
+            }
+
+
+
+            async function fetchAndRenderStories() {
+                try {
+                    const response = await fetch(apiUrl);
+                    if (!response.ok) throw new Error(`Error: ${response.status}`);
+
+                    const posts = await response.json();
+                    const carouselContainer = document.getElementById('carousel-items');
+
+                    // Generate carousel items for each post
+                    posts.forEach(post => {
+                        const card = document.createElement('div');
+                        card.classList.add('story-card');
+                        card.innerHTML = `
+             <h3 class="story-title">${post.title.rendered}</h3>
+             <div class="story-footer">
+                 <p class="story-description">
+                     ${truncateText(post.excerpt.rendered.replace(/<\/?[^>]+(>|$)/g, ""), 100)}
+                 </p>
+                 <a class="story-button" href="${post.link}" target="_blank">
+         <span>&rarr;</span>
+         </a>
+         
+             </div>
+         `;
+                        carouselContainer.appendChild(card);
+                    });
+
+                    // Initialize carousel functionality
+                    let currentIndex = 0;
+                    const itemsPerSlide = 3; // Show 3 items at a time
+                    const totalItems = posts.length;
+                    const getItemsPerSlide = () => {
+    return window.innerWidth <= 767 ? 1 : 3; // 1 card for mobile, 3 for desktop
+};
+
+const moveCarousel = (direction) => {
+    const itemsPerSlide = getItemsPerSlide(); // Dynamically determine items per slide
+    const cardWidth = carouselContainer.querySelector('.story-card').offsetWidth; // Card width
+    const cardMargin = parseInt(getComputedStyle(carouselContainer.querySelector('.story-card')).marginRight, 10); // Card margin
+
+    // Update currentIndex by one card at a time
+    currentIndex += direction;
+
+    // Clamp currentIndex to the valid range
+    currentIndex = Math.max(0, Math.min(currentIndex, totalItems - 1)); // For single-card slides, totalItems - 1
+
+    // Calculate offset based on the exact card position
+    const offset = -currentIndex * (cardWidth + cardMargin);
+    carouselContainer.style.transform = `translateX(${offset}px)`;
+};
+
+document.querySelector('.left-arrow').addEventListener('click', () => moveCarousel(-1));
+document.querySelector('.right-arrow').addEventListener('click', () => moveCarousel(1));
+                    // Ensure initial state is correctly displaying the first 3 items
+                    const carouselItems = document.getElementById('carousel-items');
+                    carouselItems.style.transform = 'translateX(0px)';
+
+                } catch (error) {
+                    console.error("Error fetching posts:", error);
+                }
+            }
+
+
+
+            // Fetch and render posts on page load
+            document.addEventListener("DOMContentLoaded", fetchAndRenderStories);
+            // fetchPosts();
+
+            const modal = document.getElementById("myModal");
+            const span = document.getElementById("closeModal");
+            const modalActions = document.getElementsByClassName("modal-action");
+
+            for (let index = 0; index < modalActions.length; index++) {
+                modalActions[index].onclick = function () {
+                    modal.style.display = "block";
+                }
+
+            }
+
+
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+            const testimonialsContainer = document.querySelector('.testimonial-container');
+            const chevronLeft = document.querySelector('.chevron-left');
+            const chevronRight = document.querySelector('.chevron-right');
+            const testimonialText = document.querySelector('.testimonial-text');
+
+            const testimonials = [
+                {
+                    text: '“MachineryMax has been instrumental in helping us efficiently manage excess inventory and improve our bottom line through targeted, profitable sales.”',
+                    author: "Jordan Hawkins",
+                    authorCompany: 'Product Manager, Weinig USA',
+                },
+
+                {
+                    text: '“Our partnership with MachineryMax has streamlined our operations and enhanced our customer relations by enabling us to accept trade-ins and generate an additional revenue stream by selling used equipment.”',
+                    author: "Mark Craig",
+                    authorCompany: 'Vice President, SCM Group NA',
+                },
+            ];
+
+            let testimonialCurrentIndex = 0;
+
+            function showTestimonial(index) {
+                const testimonialTextWrapper = document.querySelector('.testimonial-text-wrapper');
+                // testimonialTextWrapper.style.height = '100px'; // Reset the height
+                const testimonialTextElement = document.querySelector('.testimonial-text');
+                const testimonialAuthorElement = document.querySelector('.testimonial-author');
+                const testimonialAuthorCompanyElement = document.querySelector('.testimonial-author-company');
+                // const testimonialAuthorLocationElement = document.querySelector('.testimonial-author-location')
+                testimonialTextElement.style.animation = 'none'; // Reset the animation
+                void testimonialTextElement.offsetWidth; // Trigger a reflow to ensure the animation plays
+                testimonialTextElement.style.animation = 'slideIn 0.5s ease-in-out';
+
+
+                testimonialAuthorElement.style.animation = 'none'; // Reset the animation
+                void testimonialAuthorElement.offsetWidth; // Trigger a reflow to ensure the animation plays
+                testimonialAuthorElement.style.animation = 'slideIn 0.5s ease-in-out';
+
+
+                testimonialAuthorCompanyElement.style.animation = 'none'; // Reset the animation
+                void testimonialAuthorCompanyElement.offsetWidth; // Trigger a reflow to ensure the animation plays
+                testimonialAuthorCompanyElement.style.animation = 'slideIn 0.5s ease-in-out';
+
+
+                // testimonialAuthorLocationElement.style.animation = 'none'; // Reset the animation
+                // void testimonialAuthorLocationElement.offsetWidth; // Trigger a reflow to ensure the animation plays
+                // testimonialAuthorLocationElement.style.animation = 'slideIn 0.5s ease-in-out';
+
+
+
+                testimonialTextElement.textContent = testimonials[index].text;
+                testimonialAuthorElement.textContent = testimonials[index].author;
+                testimonialAuthorCompanyElement.textContent = testimonials[index].authorCompany;
+                // testimonialAuthorLocationElement.textContent = testimonials[index].authorLocation;
+            }
+
+            chevronLeft.addEventListener('click', () => {
+                testimonialCurrentIndex = (testimonialCurrentIndex - 1 + testimonials.length) % testimonials.length;
+                showTestimonial(testimonialCurrentIndex);
+            });
+
+            chevronRight.addEventListener('click', () => {
+                testimonialCurrentIndex = (testimonialCurrentIndex + 1) % testimonials.length;
+                showTestimonial(testimonialCurrentIndex);
+            });
+
+            showTestimonial(testimonialCurrentIndex);
+        </script><!-- <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script> -->
+</body>
+
+</html>
